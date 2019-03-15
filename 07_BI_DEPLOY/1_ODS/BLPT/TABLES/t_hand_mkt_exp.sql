@@ -1,0 +1,75 @@
+DROP TABLE IF EXISTS ODS_BLPT.`T_HAND_MKT_EXP`;
+CREATE TABLE ODS_BLPT.`T_HAND_MKT_EXP` (
+  `ID`               BIGINT         COMMENT 'AUTO_INCREMENT',
+  `SEQ_ID`           STRING         COMMENT '序号ID',
+  `YEAR_ID`          STRING         COMMENT '年份ID',
+  `RGN_NAME`         STRING         COMMENT '大区名称',
+  `CAT`              STRING         COMMENT '分类',
+  `LAST_UPDATE_DATE` STRING         COMMENT '',
+  `LAST_UPDATED_BY`  STRING         COMMENT '',
+  `CREATION_DATE`    STRING         COMMENT '',
+  `CREATED_BY`       STRING         COMMENT '',
+  `JAN_AMT`          DECIMAL(32, 8) COMMENT '1月',
+  `FEB_AMT`          DECIMAL(32, 8) COMMENT '2月',
+  `MAR_AMT`          DECIMAL(32, 8) COMMENT '3月',
+  `APR_AMT`          DECIMAL(32, 8) COMMENT '4月',
+  `MAY_AMT`          DECIMAL(32, 8) COMMENT '5月',
+  `JUNE_AMT`         DECIMAL(32, 8) COMMENT '6月',
+  `JULY_AMT`         DECIMAL(32, 8) COMMENT '7月',
+  `AUG_AMT`          DECIMAL(32, 8) COMMENT '8月',
+  `SEPT_AMT`         DECIMAL(32, 8) COMMENT '9月',
+  `OCT_AMT`          DECIMAL(32, 8) COMMENT '10月',
+  `NOV_AMT`          DECIMAL(32, 8) COMMENT '11月',
+  `DEC_AMT`          DECIMAL(32, 8) COMMENT '12月'
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\036' STORED AS PARQUET;
+
+DROP TABLE IF EXISTS ODS_BLPT.`STG_T_HAND_MKT_EXP`;
+CREATE TABLE ODS_BLPT.`STG_T_HAND_MKT_EXP` (
+  `ID`               BIGINT         COMMENT 'AUTO_INCREMENT',
+  `SEQ_ID`           STRING         COMMENT '序号ID',
+  `YEAR_ID`          STRING         COMMENT '年份ID',
+  `RGN_NAME`         STRING         COMMENT '大区名称',
+  `CAT`              STRING         COMMENT '分类',
+  `LAST_UPDATE_DATE` STRING         COMMENT '',
+  `LAST_UPDATED_BY`  STRING         COMMENT '',
+  `CREATION_DATE`    STRING         COMMENT '',
+  `CREATED_BY`       STRING         COMMENT '',
+  `JAN_AMT`          DECIMAL(32, 8) COMMENT '1月',
+  `FEB_AMT`          DECIMAL(32, 8) COMMENT '2月',
+  `MAR_AMT`          DECIMAL(32, 8) COMMENT '3月',
+  `APR_AMT`          DECIMAL(32, 8) COMMENT '4月',
+  `MAY_AMT`          DECIMAL(32, 8) COMMENT '5月',
+  `JUNE_AMT`         DECIMAL(32, 8) COMMENT '6月',
+  `JULY_AMT`         DECIMAL(32, 8) COMMENT '7月',
+  `AUG_AMT`          DECIMAL(32, 8) COMMENT '8月',
+  `SEPT_AMT`         DECIMAL(32, 8) COMMENT '9月',
+  `OCT_AMT`          DECIMAL(32, 8) COMMENT '10月',
+  `NOV_AMT`          DECIMAL(32, 8) COMMENT '11月',
+  `DEC_AMT`          DECIMAL(32, 8) COMMENT '12月'
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\036' STORED AS TEXTFILE;
+
+DROP TABLE IF EXISTS ODS_BLPT.`HIS_T_HAND_MKT_EXP`;
+CREATE TABLE ODS_BLPT.`HIS_T_HAND_MKT_EXP` (
+  `ID`               BIGINT         COMMENT 'AUTO_INCREMENT',
+  `SEQ_ID`           STRING         COMMENT '序号ID',
+  `YEAR_ID`          STRING         COMMENT '年份ID',
+  `RGN_NAME`         STRING         COMMENT '大区名称',
+  `CAT`              STRING         COMMENT '分类',
+  `LAST_UPDATE_DATE` STRING         COMMENT '',
+  `LAST_UPDATED_BY`  STRING         COMMENT '',
+  `CREATION_DATE`    STRING         COMMENT '',
+  `CREATED_BY`       STRING         COMMENT '',
+  `JAN_AMT`          DECIMAL(32, 8) COMMENT '1月',
+  `FEB_AMT`          DECIMAL(32, 8) COMMENT '2月',
+  `MAR_AMT`          DECIMAL(32, 8) COMMENT '3月',
+  `APR_AMT`          DECIMAL(32, 8) COMMENT '4月',
+  `MAY_AMT`          DECIMAL(32, 8) COMMENT '5月',
+  `JUNE_AMT`         DECIMAL(32, 8) COMMENT '6月',
+  `JULY_AMT`         DECIMAL(32, 8) COMMENT '7月',
+  `AUG_AMT`          DECIMAL(32, 8) COMMENT '8月',
+  `SEPT_AMT`         DECIMAL(32, 8) COMMENT '9月',
+  `OCT_AMT`          DECIMAL(32, 8) COMMENT '10月',
+  `NOV_AMT`          DECIMAL(32, 8) COMMENT '11月',
+  `DEC_AMT`          DECIMAL(32, 8) COMMENT '12月'
+) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\036' STORED AS PARQUET;
+

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_DMR_PC_OV_ALL_COL_M</name>
+    <description>&#x5730;&#x533a;&#x7ef4;&#x5ea6;</description>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>Hive</name>
+    <server>&#x24;&#x7b;CMALDW_HIVE_DB_HOST&#x7d;</server>
+    <type>HIVE2</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;CMALDW_HIVE_DB_NAME&#x7d;</database>
+    <port>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</port>
+    <username>&#x24;&#x7b;CMALDW_HIVE_DB_USER&#x7d;</username>
+    <password>&#x24;&#x7b;CMALDW_HIVE_DB_PASSWORD&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>624</xloc>
+      <yloc>16</yloc>
+      </entry>
+    <entry>
+      <name>GenPara</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_generate_parameteer.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>624</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>SUCCESS</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>624</xloc>
+      <yloc>352</yloc>
+      </entry>
+    <entry>
+      <name>UPDATE_PARA</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_update_parameter.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>624</xloc>
+      <yloc>272</yloc>
+      </entry>
+    <entry>
+      <name>TO_DMR</name>
+      <description/>
+      <type>SQL</type>
+      <sql>--Source Table in Hive&#x3a; DIM.DIM_ORG &#xd;&#xa;--Target Table in Hive&#x3a; DMR.DMR_OV_RGN_PROVINCE_RELA&#xd;&#xa;--Reference&#x3a; &#xd;&#xa;&#xd;&#xa;--hive conf settings&#xd;&#xa;--set hive.execution.engine&#x3d;spark&#x3b;&#xd;&#xa;set mapreduce.queue.name&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number&#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition&#x3d;true&#x3b;&#xd;&#xa;&#xd;&#xa;--data insertion&#xd;&#xa;INSERT OVERWRITE TABLE DMR.DMR_PC_OV_ALL_COL_M PARTITION&#x28;PART_SC, PART_DT&#x29;&#xd;&#xa;SELECT T.PERIOD_WID AS PERIOD_WID --  &#x671f;&#x95f4;ID&#xd;&#xa;      ,T.PERIOD_TYPE --  &#x671f;&#x95f4;&#x7c7b;&#x578b;ID&#x28;Y,&#x5e74;,M,&#x6708;,D,&#x65e5;&#x29;&#xd;&#xa;      ,&#x27;R&#x27; AS ORG_TYPE --  &#x7ec4;&#x7ec7;&#x7c7b;&#x578b;&#x28;R,&#x5927;&#x533a;,B,&#x57fa;&#x5730;,S,&#x4ed3;&#x50a8;,P,&#x9879;&#x76ee;&#x29;&#xd;&#xa;      ,T.RGN_ID AS RGN_ID --  &#x5927;&#x533a;ID&#xd;&#xa;      ,T.RGN_NAME AS RGN_NAME --  &#x5927;&#x533a;&#x540d;&#x79f0;&#xd;&#xa;      ,T.PROJ_ID --  &#x9879;&#x76ee;ID&#xd;&#xa;      ,T.PROJ_NAME --  &#x9879;&#x76ee;&#x540d;&#x79f0;&#xd;&#xa;      ,T.VCL_INCOME_AMT AS INCOME_AMT --  &#x6536;&#x5165;&#x28;&#x4e07;&#x5143;&#x29;&#xd;&#xa;      ,T.PROFIT_AMT AS PROFIT_AMT --  &#x5229;&#x6da6;&#x28;&#x4e07;&#x5143;&#x29;&#xd;&#xa;      ,TQ.VCL_INCOME_AMT AS INCOME_AMT_TQ --  &#x6536;&#x5165;&#x540c;&#x671f;&#x28;&#x4e07;&#x5143;&#x29;&#xd;&#xa;      ,TQ.PROFIT_AMT AS PROFIT_AMT_TQ --  &#x5229;&#x6da6;&#x540c;&#x671f;&#x28;&#x4e07;&#x5143;&#x29;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;T.BIZ_INCOME_PLAN_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                T.VCL_INCOME_AMT &#x2f; T.BIZ_INCOME_PLAN_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS INCOME_RATE --  &#x6536;&#x5165;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;T.PROFIT_PLAN_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                T.PROFIT_AMT &#x2f; T.PROFIT_PLAN_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS PROFIT_RATE --  &#x5229;&#x6da6;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TQ.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;T.VCL_INCOME_AMT, 0&#x29; - NVL&#x28;TQ.VCL_INCOME_AMT, 0&#x29;&#x29; &#x2f;&#xd;&#xa;                TQ.VCL_INCOME_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS INCOME_RATE_YOY --  &#x6536;&#x5165;&#x5b8c;&#x6210;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;SQ.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;T.VCL_INCOME_AMT, 0&#x29; - NVL&#x28;SQ.VCL_INCOME_AMT, 0&#x29;&#x29; &#x2f;&#xd;&#xa;                SQ.VCL_INCOME_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS INCOME_RATE_MOM --  &#x6536;&#x5165;&#x5b8c;&#x6210;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TQ.PROFIT_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;T.PROFIT_AMT, 0&#x29; - NVL&#x28;TQ.PROFIT_AMT, 0&#x29;&#x29; &#x2f; TQ.PROFIT_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS PROFIT_RATE_YOY --  &#x5229;&#x6da6;&#x5b8c;&#x6210;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;SQ.PROFIT_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;T.PROFIT_AMT, 0&#x29; - NVL&#x28;SQ.PROFIT_AMT, 0&#x29;&#x29; &#x2f; SQ.PROFIT_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS PROFIT_RATE_MOM --  &#x5229;&#x6da6;&#x5b8c;&#x6210;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,T.AR_RETURN_AMT AS AR_RETURN_AMT --  &#x5e94;&#x6536;&#x8d26;&#x6b3e;&#x56de;&#x6b3e;&#x989d;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;T.AR_RETURN_TGT_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                T.AR_RETURN_AMT &#x2f; T.AR_RETURN_TGT_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS AR_RETURN_RATE --  &#x5e94;&#x6536;&#x8d26;&#x6b3e;&#x56de;&#x6b3e;&#x7387;&#xd;&#xa;      ,NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                   WHEN NVL&#x28;T.AR_RETURN_TGT_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                    0&#xd;&#xa;                   ELSE&#xd;&#xa;                    T.AR_RETURN_AMT &#x2f; T.AR_RETURN_TGT_AMT&#xd;&#xa;                 END&#x29;,&#xd;&#xa;                 4&#x29;,&#xd;&#xa;           0&#x29; - NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                            WHEN NVL&#x28;TQ.AR_RETURN_TGT_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                             0&#xd;&#xa;                            ELSE&#xd;&#xa;                             TQ.AR_RETURN_AMT &#x2f; TQ.AR_RETURN_TGT_AMT&#xd;&#xa;                          END&#x29;,&#xd;&#xa;                          4&#x29;,&#xd;&#xa;                    0&#x29; AS AR_RETURN_RATE_TQ --  &#x5e94;&#x6536;&#x8d26;&#x6b3e;&#x56de;&#x6b3e;&#x7387;&#x540c;&#x671f;&#xd;&#xa;      ,ARC.RC_AMT AS REDUCE_COST_AMT --  &#x6574;&#x4f53;&#x964d;&#x672c;&#xd;&#xa;      ,ARCTQ.RC_AMT AS REDUCE_COST_AMT_TQ --  &#x6574;&#x4f53;&#x964d;&#x672c;&#x540c;&#x671f;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;ARC.RC_TGT_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                ARC.RC_AMT &#x2f; ARC.RC_TGT_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS REDUCE_COST_RATE --  &#x6574;&#x4f53;&#x964d;&#x672c;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;ARCTQ.RC_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;ARC.RC_AMT, 0&#x29; - NVL&#x28;ARCTQ.RC_AMT, 0&#x29;&#x29; &#x2f; ARCTQ.RC_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS REDUCE_COST_RATE_YOY --  &#x6574;&#x4f53;&#x964d;&#x672c;&#x5b8c;&#x6210;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;ARCSQ.RC_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;ARC.RC_AMT, 0&#x29; - NVL&#x28;ARCSQ.RC_AMT, 0&#x29;&#x29; &#x2f; ARCSQ.RC_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS REDUCE_COST_RATE_MOM --  &#x6574;&#x4f53;&#x964d;&#x672c;&#x5b8c;&#x6210;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;T.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                T.HUMAN_COST_AMT &#x2f; T.VCL_INCOME_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS FACT_FEE_RATE --&#x5b9e;&#x9645;&#x8d39;&#x7528;&#x7387;     &#x4eba;&#x4e8b;&#x8d39;&#x7528;&#x7387;&#x3d;&#x603b;&#x4eba;&#x529b;&#x6210;&#x672c;&#x2f;&#x8425;&#x4e1a;&#x6536;&#x5165;&#x2a;100&#x25; as  HR_FEE_RATE --  &#x4eba;&#x4e8b;&#x8d39;&#x7528;&#x7387;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TQ.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                TQ.HUMAN_COST_AMT &#x2f; TQ.VCL_INCOME_AMT&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS FACT_FEE_RATE_TQ --&#x5b9e;&#x9645;&#x8d39;&#x7528;&#x7387;     &#x4eba;&#x4e8b;&#x8d39;&#x7528;&#x7387;&#x3d;&#x603b;&#x4eba;&#x529b;&#x6210;&#x672c;&#x2f;&#x8425;&#x4e1a;&#x6536;&#x5165;&#x2a;100&#x25; as  HR_FEE_RATE_TQ  --  &#x4eba;&#x4e8b;&#x8d39;&#x7528;&#x7387;&#x540c;&#x671f;&#xd;&#xa;      ,NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                   WHEN NVL&#x28;T.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                    NULL&#xd;&#xa;                   ELSE&#xd;&#xa;                    T.HUMAN_COST_AMT &#x2f; T.VCL_INCOME_AMT&#xd;&#xa;                 END&#x29;,&#xd;&#xa;                 4&#x29;,&#xd;&#xa;           0&#x29; - NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                            WHEN NVL&#x28;TQ.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                             NULL&#xd;&#xa;                            ELSE&#xd;&#xa;                             TQ.HUMAN_COST_AMT &#x2f; TQ.VCL_INCOME_AMT&#xd;&#xa;                          END&#x29;,&#xd;&#xa;                          4&#x29;,&#xd;&#xa;                    0&#x29; AS HR_FEE_RATE_YOY --  &#x4eba;&#x4e8b;&#x8d39;&#x7528;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                   WHEN NVL&#x28;T.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                    NULL&#xd;&#xa;                   ELSE&#xd;&#xa;                    T.HUMAN_COST_AMT &#x2f; T.VCL_INCOME_AMT&#xd;&#xa;                 END&#x29;,&#xd;&#xa;                 4&#x29;,&#xd;&#xa;           0&#x29; - NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                            WHEN NVL&#x28;SQ.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                             NULL&#xd;&#xa;                            ELSE&#xd;&#xa;                             SQ.HUMAN_COST_AMT &#x2f; SQ.VCL_INCOME_AMT&#xd;&#xa;                          END&#x29;,&#xd;&#xa;                          4&#x29;,&#xd;&#xa;                    0&#x29; AS HR_FEE_RATE_MOM --  &#x4eba;&#x4e8b;&#x8d39;&#x7528;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,CASE&#xd;&#xa;         WHEN NVL&#x28;HFT.HR_FEE_TGT_RATE, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;          NULL&#xd;&#xa;         ELSE&#xd;&#xa;          ROUND&#x28;&#x28;CASE&#xd;&#xa;                  WHEN NVL&#x28;T.VCL_INCOME_AMT, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                   NULL&#xd;&#xa;                  ELSE&#xd;&#xa;                   T.HUMAN_COST_AMT &#x2f; T.VCL_INCOME_AMT&#xd;&#xa;                END&#x29;,&#xd;&#xa;                4&#x29; &#x2f; HFT.HR_FEE_TGT_RATE&#xd;&#xa;       END AS HR_FEE_COMP_RATE --  &#x4eba;&#x4e8b;&#x8d39;&#x7528;&#x7387;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,ME.MARKET_EXPAND_INCOME_RATE --  &#x5e02;&#x573a;&#x6536;&#x5165;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,CASE&#xd;&#xa;         WHEN NVL&#x28;MK.JH_KF, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;          NULL&#xd;&#xa;         ELSE&#xd;&#xa;          MK.SJ_KF &#x2f; MK.JH_KF&#xd;&#xa;       END AS MARKET_DEVP_RATE --  &#x5e02;&#x573a;&#x5f00;&#x53d1;&#x8fbe;&#x6210;&#x7387;&#xd;&#xa;      ,MK.BYL AS CUST_NUM --  &#x5ba2;&#x6237;&#x6570;&#xd;&#xa;      ,ME.CONTRACT_VALUE_AMT AS CONTRACT_VALUE_AMT --  &#x7b7e;&#x7ea6;&#x4ea7;&#x503c;&#xd;&#xa;      ,METQ.CONTRACT_VALUE_AMT AS CONTRACT_VALUE_AMT_TQ --  &#x7b7e;&#x7ea6;&#x4ea7;&#x503c;&#x540c;&#x671f;&#xd;&#xa;      ,ME.MARKET_EXPAND_INCOME_RATE AS CONTRACT_VALUE_RATE --  &#x7b7e;&#x7ea6;&#x4ea7;&#x503c;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,ME.CONTRACT_PROFIT_AMT AS CONTRACT_PROFIT_AMT --  &#x7b7e;&#x7ea6;&#x5229;&#x6da6;&#xd;&#xa;      ,METQ.CONTRACT_PROFIT_AMT AS CONTRACT_PROFIT_AMT_TQ --  &#x7b7e;&#x7ea6;&#x5229;&#x6da6;&#x540c;&#x671f;&#xd;&#xa;      ,ME.MARKET_EXPAND_PROFIT_RATE AS CONTRACT_PROFIT_RATE --  &#x7b7e;&#x7ea6;&#x5229;&#x6da6;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,PBQ.BIZ_NUM AS TP_BIZ_QTY --  &#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x91cf;&#xd;&#xa;      ,PBQTQ.BIZ_NUM AS TP_BIZ_QTY_TQ --  &#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x91cf;&#x540c;&#x671f;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;BT.BIZ_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                PBQ.BIZ_NUM &#x2f; BT.BIZ_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS TP_BIZ_QTY_RATE --  &#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x91cf;&#x5b8c;&#x6210;&#x7387;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;PBQTQ.BIZ_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;PBQ.BIZ_NUM, 0&#x29; - NVL&#x28;PBQTQ.BIZ_NUM, 0&#x29;&#x29; &#x2f; PBQTQ.BIZ_NUM&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS TP_BIZ_QTY_YOY --  &#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x91cf;&#x5b8c;&#x6210;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;PBQSQ.BIZ_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;PBQ.BIZ_NUM, 0&#x29; - NVL&#x28;PBQSQ.BIZ_NUM, 0&#x29;&#x29; &#x2f; PBQSQ.BIZ_NUM&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS TP_BIZ_QTY_MOM --  &#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x91cf;&#x5b8c;&#x6210;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPO.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                TPO.RG_TRANSPORT_QTY &#x2f; TPO.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS RG_TRANSPORT_MODE_RATE --  &#x4eba;&#x5de5;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPO.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                TPO.SL_TRANSPORT_QTY &#x2f; TPO.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS SL_TRANSPORT_MODE_RATE --  &#x6c34;&#x8def;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPO.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                TPO.GL_TRANSPORT_QTY &#x2f; TPO.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS GL_TRANSPORT_MODE_RATE --  &#x516c;&#x8def;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPO.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                TPO.TL_TRANSPORT_QTY &#x2f; TPO.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS TL_TRANSPORT_MODE_RATE --  &#x94c1;&#x8def;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPO.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                1 - &#x28;NVL&#x28;TPO.RG_TRANSPORT_QTY, 0&#x29; &#x2b; NVL&#x28;TPO.GL_TRANSPORT_QTY, 0&#x29; &#x2b;&#xd;&#xa;                NVL&#x28;TPO.SL_TRANSPORT_QTY, 0&#x29; &#x2b; NVL&#x28;TPO.TL_TRANSPORT_QTY, 0&#x29;&#x29; &#x2f;&#xd;&#xa;                TPO.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS QT_TRANSPORT_MODE_RATE --  &#x5176;&#x5b83;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPOTQ.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                NVL&#x28;TPOTQ.RG_TRANSPORT_QTY, 0&#x29; &#x2f;&#xd;&#xa;                TPOTQ.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS RG_TRANSPORT_MODE_RATE_YOY --  &#x4eba;&#x5de5;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#x540c;&#x671f;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPOTQ.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                NVL&#x28;TPOTQ.SL_TRANSPORT_QTY, 0&#x29; &#x2f;&#xd;&#xa;                TPOTQ.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS SL_TRANSPORT_MODE_RATE_YOY --  &#x6c34;&#x8def;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#x540c;&#x671f;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPOTQ.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                NVL&#x28;TPOTQ.GL_TRANSPORT_QTY, 0&#x29; &#x2f;&#xd;&#xa;                TPOTQ.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS GL_TRANSPORT_MODE_RATE_YOY --  &#x516c;&#x8def;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#x540c;&#x671f;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPOTQ.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                NVL&#x28;TPOTQ.TL_TRANSPORT_QTY, 0&#x29; &#x2f;&#xd;&#xa;                TPOTQ.TOTAL_TRANSPORT_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS TL_TRANSPORT_MODE_RATE_YOY --  &#x94c1;&#x8def;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#x540c;&#x671f;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;TPOTQ.TOTAL_TRANSPORT_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE &#xd;&#xa;                &#x28;NVL&#x28;TPOTQ.TOTAL_TRANSPORT_QTY, 0&#x29; -&#xd;&#xa;                NVL&#x28;TPOTQ.RG_TRANSPORT_QTY, 0&#x29; - NVL&#x28;TPOTQ.SL_TRANSPORT_QTY, 0&#x29; -&#xd;&#xa;                NVL&#x28;TPOTQ.GL_TRANSPORT_QTY, 0&#x29; - NVL&#x28;TPOTQ.TL_TRANSPORT_QTY, 0&#x29;&#x29; &#x2f;&#xd;&#xa;                NVL&#x28;TPOTQ.TOTAL_TRANSPORT_QTY, 0&#x29;&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS QT_TRANSPORT_MODE_RATE_YOY --  &#x5176;&#x5b83;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x5360;&#x6bd4;&#x540c;&#x671f;  &#xd;&#xa;      ,SP.BIZ_QTY AS STR_BIZ_QTY --  &#x4ed3;&#x50a8;&#x4e1a;&#x52a1;&#x91cf;&#xd;&#xa;      ,SPTQ.BIZ_QTY AS STR_BIZ_QTY_TQ --  &#x4ed3;&#x50a8;&#x4e1a;&#x52a1;&#x91cf;&#x540c;&#x671f;&#xd;&#xa;      ,NULL AS STR_BIZ_QTY_TGT --  &#x4ed3;&#x50a8;&#x4e1a;&#x52a1;&#x91cf;&#x76ee;&#x6807;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;SPTQ.BIZ_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;SP.BIZ_QTY, 0&#x29; - NVL&#x28;SPTQ.BIZ_QTY, 0&#x29;&#x29; &#x2f; SPTQ.BIZ_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS STR_BIZ_QTY_YOY --  &#x4ed3;&#x50a8;&#x4e1a;&#x52a1;&#x91cf;&#x540c;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;SPSQ.BIZ_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                0&#xd;&#xa;               ELSE&#xd;&#xa;                &#x28;NVL&#x28;SP.BIZ_QTY, 0&#x29; - NVL&#x28;SPSQ.BIZ_QTY, 0&#x29;&#x29; &#x2f; SPSQ.BIZ_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS STR_BIZ_QTY_MOM --  &#x4ed3;&#x50a8;&#x4e1a;&#x52a1;&#x91cf;&#x73af;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;DTD.OUT_STORE_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                DTD.STOCK_OUT_QTY &#x2f; DTD.OUT_STORE_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS TIMELY_OUTSTORE_RATE --  &#x53ca;&#x65f6;&#x51fa;&#x5e93;&#x7387;&#xd;&#xa;      ,ROUND&#x28;&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;DTDTQ.OUT_STORE_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                DTDTQ.STOCK_OUT_QTY &#x2f; DTDTQ.OUT_STORE_QTY&#xd;&#xa;             END&#x29;,&#xd;&#xa;             4&#x29; AS TIMELY_OUTSTORE_RATE_TQ --  &#x53ca;&#x65f6;&#x51fa;&#x5e93;&#x7387;&#x540c;&#x671f;&#xd;&#xa;      ,WT.KPI_TGT_ZC AS TIMELY_OUTSTORE_RATE_TGT --  &#x53ca;&#x65f6;&#x51fa;&#x5e93;&#x7387;&#x76ee;&#x6807;&#xd;&#xa;      ,NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                   WHEN NVL&#x28;DTD.OUT_STORE_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                    NULL&#xd;&#xa;                   ELSE&#xd;&#xa;                    DTD.STOCK_OUT_QTY &#x2f; DTD.OUT_STORE_QTY&#xd;&#xa;                 END&#x29;,&#xd;&#xa;                 4&#x29;,&#xd;&#xa;           0&#x29; - NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                            WHEN NVL&#x28;DTDTQ.OUT_STORE_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                             NULL&#xd;&#xa;                            ELSE&#xd;&#xa;                             DTDTQ.STOCK_OUT_QTY &#x2f; DTDTQ.OUT_STORE_QTY&#xd;&#xa;                          END&#x29;,&#xd;&#xa;                          4&#x29;,&#xd;&#xa;                    0&#x29; AS TIMELY_OUTSTORE_RATE_YOY --  &#x53ca;&#x65f6;&#x51fa;&#x5e93;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                   WHEN NVL&#x28;DTD.OUT_STORE_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                    NULL&#xd;&#xa;                   ELSE&#xd;&#xa;                    DTD.STOCK_OUT_QTY &#x2f; DTD.OUT_STORE_QTY&#xd;&#xa;                 END&#x29;,&#xd;&#xa;                 4&#x29;,&#xd;&#xa;           0&#x29; - NVL&#x28;ROUND&#x28;&#x28;CASE&#xd;&#xa;                            WHEN NVL&#x28;DTDSQ.OUT_STORE_QTY, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                             NULL&#xd;&#xa;                            ELSE&#xd;&#xa;                             DTDSQ.STOCK_OUT_QTY &#x2f; DTDSQ.OUT_STORE_QTY&#xd;&#xa;                          END&#x29;,&#xd;&#xa;                          4&#x29;,&#xd;&#xa;                    0&#x29; AS TIMELY_OUTSTORE_RATE_MOM --  &#x53ca;&#x65f6;&#x51fa;&#x5e93;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,ROUND&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;ARV.TOTAL_ARRIVE_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                ARV.ONTIME_ARRIVE_NUM &#x2f; ARV.TOTAL_ARRIVE_NUM&#xd;&#xa;             END,&#xd;&#xa;             4&#x29; AS ONTIME_ARRIVE_RATE --  &#x51c6;&#x65f6;&#x5230;&#x8fbe;&#x7387;&#xd;&#xa;      ,ROUND&#x28;CASE&#xd;&#xa;               WHEN NVL&#x28;ARVTQ.TOTAL_ARRIVE_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                NULL&#xd;&#xa;               ELSE&#xd;&#xa;                ARVTQ.ONTIME_ARRIVE_NUM &#x2f; ARVTQ.TOTAL_ARRIVE_NUM&#xd;&#xa;             END,&#xd;&#xa;             4&#x29; AS ONTIME_ARRIVE_RATE_TQ --  &#x51c6;&#x65f6;&#x5230;&#x8fbe;&#x7387;&#x540c;&#x671f;&#xd;&#xa;      ,WT.KPI_TGT_ZD AS ONTIME_ARRIVE_RATE_TGT --  &#x51c6;&#x65f6;&#x5230;&#x8fbe;&#x7387;&#x76ee;&#x6807;&#xd;&#xa;      ,NVL&#x28;ROUND&#x28;CASE&#xd;&#xa;                   WHEN NVL&#x28;ARV.TOTAL_ARRIVE_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                    NULL&#xd;&#xa;                   ELSE&#xd;&#xa;                    ARV.ONTIME_ARRIVE_NUM &#x2f; ARV.TOTAL_ARRIVE_NUM&#xd;&#xa;                 END,&#xd;&#xa;                 4&#x29;,&#xd;&#xa;           0&#x29; - NVL&#x28;ROUND&#x28;CASE&#xd;&#xa;                            WHEN NVL&#x28;ARVTQ.TOTAL_ARRIVE_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                             NULL&#xd;&#xa;                            ELSE&#xd;&#xa;                             ARVTQ.ONTIME_ARRIVE_NUM &#x2f; ARVTQ.TOTAL_ARRIVE_NUM&#xd;&#xa;                          END,&#xd;&#xa;                          4&#x29;,&#xd;&#xa;                    0&#x29; AS ONTIME_ARRIVE_RATE_YOY --  &#x51c6;&#x65f6;&#x5230;&#x8fbe;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,NVL&#x28;ROUND&#x28;CASE&#xd;&#xa;                   WHEN NVL&#x28;ARV.TOTAL_ARRIVE_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                    NULL&#xd;&#xa;                   ELSE&#xd;&#xa;                    ARV.ONTIME_ARRIVE_NUM &#x2f; ARV.TOTAL_ARRIVE_NUM&#xd;&#xa;                 END,&#xd;&#xa;                 4&#x29;,&#xd;&#xa;           0&#x29; - NVL&#x28;ROUND&#x28;CASE&#xd;&#xa;                            WHEN NVL&#x28;ARVSQ.TOTAL_ARRIVE_NUM, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                             NULL&#xd;&#xa;                            ELSE&#xd;&#xa;                             ARVSQ.ONTIME_ARRIVE_NUM &#x2f; ARVSQ.TOTAL_ARRIVE_NUM&#xd;&#xa;                          END,&#xd;&#xa;                          4&#x29;,&#xd;&#xa;                    0&#x29; AS ONTIME_ARRIVE_RATE_MOM --  &#x51c6;&#x65f6;&#x5230;&#x8fbe;&#x7387;&#x73af;&#x6bd4; &#xd;&#xa;      ,ZS.RATE AS HUNDRED_CAR_MASS_LOSS_RATE --  &#x767e;&#x53f0;&#x8f66;&#x8d28;&#x635f;&#x7387;&#xd;&#xa;      ,ZS.RATE_YOY AS HUNDRED_CAR_MASS_LOSS_RATE_TQ --  &#x767e;&#x53f0;&#x8f66;&#x8d28;&#x635f;&#x7387;&#x540c;&#x671f;&#xd;&#xa;      ,WT.KPI_TGT_ZS AS HUNDRED_CAR_MASS_LOSS_RATE_TGT --  &#x767e;&#x53f0;&#x8f66;&#x8d28;&#x635f;&#x7387;&#x76ee;&#x6807;&#xd;&#xa;      ,NVL&#x28;ZS.RATE, 0&#x29; - NVL&#x28;ZS.RATE_YOY, 0&#x29; AS HUNDREDCARMASSLOSSRATE_YOY --  &#x767e;&#x53f0;&#x8f66;&#x8d28;&#x635f;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,NVL&#x28;ZS.RATE, 0&#x29; - NVL&#x28;ZS.RATE_MOM, 0&#x29; AS HUNDREDCARMASSLOSSRATE_MOM --  &#x767e;&#x53f0;&#x8f66;&#x8d28;&#x635f;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,ZTZS.MASSLOSE_RATE AS ON_PASSAGE_LOSS_RATE --  &#x5728;&#x9014;&#x8d28;&#x635f;&#x7387;&#xd;&#xa;      ,ZTZSTQ.MASSLOSE_RATE AS ON_PASSAGE_LOSS_RATE_TQ --  &#x5728;&#x9014;&#x8d28;&#x635f;&#x7387;&#x540c;&#x671f;&#xd;&#xa;      ,WT.KPI_TGT_ZT AS ON_PASSAGE_LOSS_RATE_TGT --  &#x5728;&#x9014;&#x8d28;&#x635f;&#x7387;&#x76ee;&#x6807;&#xd;&#xa;      ,NVL&#x28;ZTZS.MASSLOSE_RATE, 0&#x29; - NVL&#x28;ZTZSTQ.MASSLOSE_RATE, 0&#x29; AS ON_PASSAGE_LOSS_RATE_YOY --  &#x5728;&#x9014;&#x8d28;&#x635f;&#x7387;&#x540c;&#x6bd4;&#xd;&#xa;      ,NVL&#x28;ZTZS.MASSLOSE_RATE, 0&#x29; - NVL&#x28;ZTZSSQ.MASSLOSE_RATE, 0&#x29; ON_PASSAGE_LOSS_RATE_MOM --  &#x5728;&#x9014;&#x8d28;&#x635f;&#x7387;&#x73af;&#x6bd4;&#xd;&#xa;      ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;YYYY-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS INSERT_TIME --&#x63d2;&#x5165;&#x65f6;&#x95f4;&#xd;&#xa;      ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;YYYY-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS UPDATE_TIME --&#x66f4;&#x65b0;&#x65f6;&#x95f4; &#xd;&#xa;      ,&#x27;DW&#x26;DMK&#x26;ODS&#x27; AS PART_SC&#xd;&#xa;      ,T.PERIOD_WID AS PART_DT&#xd;&#xa;  FROM TEMP.TEMP_DMR_PC_OV_ALL_COL_M_01 AS T&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_02 AS TQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; TQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; TQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; TQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; TQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_03 AS SQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; SQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; SQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; SQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; SQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_04 AS ARC&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ARC.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ARC.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ARC.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ARC.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_05 AS ARCTQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ARCTQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ARCTQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ARCTQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ARCTQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_06 AS ARCSQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ARCSQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ARCSQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ARCSQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ARCSQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_07 AS HFT&#xd;&#xa;    ON T.PERIOD_WID &#x3d; HFT.PERIOD_WID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; HFT.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_08 AS ME&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ME.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ME.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ME.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ME.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_09 AS METQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; METQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; METQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; METQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; METQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_10 AS MK&#xd;&#xa;    ON T.PERIOD_WID &#x3d; MK.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; MK.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; MK.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; MK.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_11 AS PBQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; PBQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; PBQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; PBQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; PBQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_12 AS PBQTQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; PBQTQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; PBQTQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; PBQTQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; PBQTQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_13 AS PBQSQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; PBQSQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; PBQSQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; PBQSQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; PBQSQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_14 AS BT&#xd;&#xa;    ON T.PERIOD_WID &#x3d; BT.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; BT.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; BT.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; BT.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_15 AS TPO&#xd;&#xa;    ON T.PERIOD_WID &#x3d; TPO.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; TPO.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; TPO.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; TPO.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_16 AS TPOTQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; TPOTQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; TPOTQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; TPOTQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; TPOTQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_17 AS SP&#xd;&#xa;    ON T.PERIOD_WID &#x3d; SP.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; SP.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; SP.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; SP.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_18 AS SPTQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; SPTQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; SPTQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; SPTQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; SPTQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_19 AS SPSQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; SPSQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; SPSQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; SPSQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; SPSQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_20 AS DTD&#xd;&#xa;    ON T.PERIOD_WID &#x3d; DTD.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; DTD.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; DTD.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; DTD.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_21 AS DTDTQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; DTDTQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; DTDTQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; DTDTQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; DTDTQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_22 AS DTDSQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; DTDSQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; DTDSQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; DTDSQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; DTDSQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_23 AS WT&#xd;&#xa;    ON T.PERIOD_WID &#x3d; WT.PERIOD_WID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; WT.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_24 AS ARV&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ARV.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ARV.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ARV.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ARV.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_25 AS ARVTQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ARVTQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ARVTQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ARVTQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ARVTQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_26 AS ARVSQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ARVSQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ARVSQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ARVSQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ARVSQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_27 AS ZS&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ZS.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ZS.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ZS.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ZS.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_28 AS ZTZS&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ZTZS.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ZTZS.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ZTZS.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ZTZS.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_29 AS ZTZSTQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ZTZSTQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ZTZSTQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ZTZSTQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ZTZSTQ.PERIOD_TYPE&#xd;&#xa;  LEFT JOIN TEMP.TEMP_DMR_PC_OV_ALL_COL_M_30 AS ZTZSSQ&#xd;&#xa;    ON T.PERIOD_WID &#x3d; ZTZSSQ.PERIOD_WID&#xd;&#xa;   AND T.RGN_ID &#x3d; ZTZSSQ.RGN_ID&#xd;&#xa;   AND T.PROJ_ID &#x3d; ZTZSSQ.PROJ_ID&#xd;&#xa;   AND T.PERIOD_TYPE &#x3d; ZTZSSQ.PERIOD_TYPE&#x3b;&#xd;&#xa;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>624</xloc>
+      <yloc>192</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>START</from>
+      <to>GenPara</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>UPDATE_PARA</from>
+      <to>SUCCESS</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_DMR</from>
+      <to>UPDATE_PARA</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>GenPara</from>
+      <to>TO_DMR</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+    <notepad>
+      <note>&#x529f;&#x80fd;&#x8bf4;&#x660e;&#xff1a;DMR_PC_OV_ALL_COL_M &#xd;&#xa;&#x66f4;&#x65b0;&#x65b9;&#x5f0f;&#xff1a;REPLACE&#xd;&#xa;&#x521b; &#x5efa; &#x4eba; &#xff1a;&#x590f;&#x6ce2; - &#x7f8e;&#x4e91;&#xd;&#xa;&#x521b;&#x5efa;&#x65e5;&#x671f;&#xff1a;2018&#x2f;9&#x2f;12&#xd;&#xa;&#x8fd0;&#x884c;&#x5468;&#x671f;&#xff1a;&#x6708;&#xd;&#xa;&#x4f8b;&#x3000;&#x3000;&#x7a0b;&#xff1a;&#x8c03;&#x7528;&#x8be5;&#x4f5c;&#x4e1a;&#x7684;&#x547d;&#x4ee4;&#x884c;&#x8bed;&#x53e5;,&#x542b;&#x8f93;&#x5165;&#x53c2;&#x6570;&#xd;&#xa;&#x5907;&#x3000;&#x3000;&#x6ce8;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x8bb0;&#x5f55;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x65e5;&#x671f;&#xff1a;&#xd;&#xa;&#x7ef4; &#x62a4; &#x4eba; &#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x5185;&#x5bb9;&#xff1a;&#xd;&#xa;</note>
+      <xloc>64</xloc>
+      <yloc>96</yloc>
+      <width>265</width>
+      <heigth>203</heigth>
+      <fontname>Microsoft YaHei UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+
+</job>

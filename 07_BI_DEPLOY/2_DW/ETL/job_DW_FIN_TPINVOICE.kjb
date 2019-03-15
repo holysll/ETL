@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_DW_FIN_TPINVOICE</name>
+    <description>&#x5730;&#x533a;&#x7ef4;&#x5ea6;</description>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>Hive</name>
+    <server>&#x24;&#x7b;CMALDW_HIVE_DB_HOST&#x7d;</server>
+    <type>HIVE2</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;CMALDW_HIVE_DB_NAME&#x7d;</database>
+    <port>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</port>
+    <username>&#x24;&#x7b;CMALDW_HIVE_DB_USER&#x7d;</username>
+    <password>&#x24;&#x7b;CMALDW_HIVE_DB_PASSWORD&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>16</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>GenPara</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_generate_parameteer.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>160</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>SUCCESS</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>768</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>UPDATE_PARA</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_update_parameter.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>672</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>TO_DW</name>
+      <description/>
+      <type>SQL</type>
+      <sql>&#xd;&#xa;--Settings&#xd;&#xa;set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;TO_DW&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.auto.convert.join&#x3d;false&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;&#xd;&#xa;--Udf&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--Insert Data&#xd;&#xa;INSERT OVERWRITE TABLE DW.DW_FIN_TPINVOICE PARTITION&#x28;PART_SC,PART_DT&#x29;&#xd;&#xa;SELECT REGEXP_REPLACE&#x28;SUBSTR&#x28;T.START_DATE, 1, 10&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; AS PERIOD_WID --  &#x65e5;&#x671f;&#x7ef4;ID&#xd;&#xa;      ,T.INVOICE_GID AS INVOICE_GID --  &#x53d1;&#x7968;GID&#xd;&#xa;      ,T.INVOICE_XID AS INVOICE_XID --  &#x53d1;&#x7968;XID&#xd;&#xa;      ,T.INVOICE_TYPE AS INVOICE_TYPE --  &#x8868;&#x793a;&#x8fd9;&#x662f;&#x4e00;&#x5f20;&#x7968;&#x636e;&#x8fd8;&#x662f;&#x4e00;&#x5f20;&#x53d1;&#x7968;&#xff08;&#x6709;&#x6548;&#x503c;&#x662f;&#x2018;i&#x2019;&#x6216;&#x2018;b&#x2019;&#xff09;&#xd;&#xa;      ,T.INVOICE_SOURCE AS INVOICE_SOURCE --  &#x53d1;&#x7968;&#x6e90;&#x6709;&#x6548;&#x503c;&#x662f;G&#xff0c;I&#xff0c;M&#x3002;&#xd;&#xa;      ,&#x27;CMAL&#x2f;ZC&#x27; AS OC_ID --  &#x8fd0;&#x8425;&#x4e2d;&#x5fc3;&#xd;&#xa;      ,COALESCE&#x28;O.RGN_ID, &#x27;-1&#x27;&#x29; AS RGN_ID --  &#x5927;&#x533a;&#xd;&#xa;      ,COALESCE&#x28;O.BASE_ID, &#x27;-1&#x27;&#x29; AS BASE_ID --  &#x57fa;&#x5730;&#xd;&#xa;      ,T.ATTRIBUTE1 AS BASE_NAME --  &#x57fa;&#x5730;&#x540d;&#x79f0;&#xd;&#xa;      ,NULL AS PROJ_ID --  &#x9879;&#x76ee;ID&#xd;&#xa;      ,NULL AS PROJ_NAME --  &#x9879;&#x76ee;&#x540d;&#x79f0;&#xd;&#xa;      ,T.ATTRIBUTE9 AS VIN --  VIN&#x7801;&#xd;&#xa;      ,T.ATTRIBUTE3 AS BRAND_ID --  &#x54c1;&#x724c;ID&#xd;&#xa;      ,T.ATTRIBUTE6 AS MODEL_ID --  &#x8f66;&#x578b;ID&#xd;&#xa;      ,T.ATTRIBUTE2 AS MDLGRP_ID --  &#x8f66;&#x578b;&#x7ec4;&#xd;&#xa;      ,NULL AS SOURCE_PRVN_ID --  &#x59cb;&#x53d1;&#x5730;&#x7701;&#x4efd;&#xd;&#xa;      ,NULL AS SOURCE_CTY_ID --  &#x59cb;&#x53d1;&#x5730;&#x57ce;&#x5e02;&#xd;&#xa;      ,NULL AS DEST_PRVN_ID --  &#x76ee;&#x7684;&#x5730;&#x7701;&#x4efd;&#xd;&#xa;      ,NULL AS DEST_CTY_ID --  &#x76ee;&#x7684;&#x5730;&#x57ce;&#x5e02;&#xd;&#xa;      ,T.ATTRIBUTE5 AS TRANSPORTMODE --  &#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x28;&#x4e00;&#x6bb5;&#x29;&#xd;&#xa;      ,T.SERVPROV_GID AS SERVPROV_GID --  &#x627f;&#x8fd0;&#x5546;&#xd;&#xa;      ,T.SERVPROV_ALIAS_VALUE AS SERVPROV_ALIAS_VALUE --  &#x627f;&#x8fd0;&#x5546;&#x522b;&#x540d;&#xd;&#xa;      ,T.ENTERED_BY_GL_USER_GID AS ENTERED_BY_GL_USER_GID --  entered_by_gl_user_gid identifies which gl user entered the invoice into the system.&#xd;&#xa;      ,T.INVOICE_NUMBER AS INVOICE_NUMBER --  invoice_number indicates the number that was assigned to the invoice.&#xd;&#xa;      ,T.SERVPROV_ALIAS_QUAL_GID AS SERV_ALIAS_QUAL_GID --  servprov_alias_qual_gid identifies the service provider qualifier &#x28;such as scec&#x29;, which  is then associated with the value in servprov_alias_value.&#xd;&#xa;      ,T.CORRECTION_CODE_ID AS CORRECTION_CODE_ID --  correction  code identifier.&#xd;&#xa;      ,T.INVOICE_DATE AS INVOICE_DATE --  &#x53d1;&#x7968;&#x65e5;&#x671f;&#xd;&#xa;      ,T.CURRENCY_GID AS CURRENCY_GID --  currency_gid is the unique identifier for currency.&#xd;&#xa;      ,T.NET_AMOUNT_DUE AS NET_AMOUNT_DUE --  &#x53d1;&#x7968;&#x6240;&#x5e94;&#x6709;&#x7684;&#x51c0;&#x91d1;&#x989d;&#xd;&#xa;      ,T.NET_AMOUNT_DUE_GID AS NET_AMOUNT_DUE_GID --  gc3 global identifier for the entity.is created by concatenating domain name,&#x22;.&#x22; and xid.&#xd;&#xa;      ,T.NET_AMOUNT_BASE AS NET_AMOUNT_BASE --  net_amount_base indicates the amount that is due in the base currency.&#xd;&#xa;      ,T.NET_DUE_DATE AS NET_DUE_DATE --  net_due_date contains the date on which the net amount for the invoice is due.&#xd;&#xa;      ,T.PAYMENT_METHOD_CODE_GID AS PAYMENT_METHOD_CODE_GID --  payment_method_code_gid contains the method of payment that is expected for the invoice.examples include&#x3a; check, cash on deliver, credit card and electronic funds transfer.&#xd;&#xa;      ,T.START_DATE AS START_DATE --  &#x5f00;&#x59cb;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.END_DATE AS END_DATE --  &#x7ed3;&#x675f;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.INVOICE_SERVICE_CODE_GID AS INVOICE_SERV_CODE_GID --  invoice_service_code_gid indicates the type of service that was performed. foreign key to invoice_service_code.&#xd;&#xa;      ,T.INCO_TERM_GID AS INCO_TERM_GID --  inco_term_gid qualifies the terms of sale for this particular invoice.&#xd;&#xa;      ,T.DISCOUNT_AMOUNT AS DISCOUNT_AMOUNT --  discount_amount contains the total dollar amount of any discounts applied to the invoice.&#xd;&#xa;      ,T.DISCOUNT_AMOUNT_GID AS DISCOUNT_AMOUNT_GID --  gc3 global indentifier for the entity.is created by concatenating domain name,&#x22;.&#x22; and xid.&#xd;&#xa;      ,T.DISCOUNT_AMOUNT_BASE AS DISCOUNT_AMOUNT_BASE --  discount_amount_base contains the amount of the discount in the base currency.&#xd;&#xa;      ,T.DISCOUNT_PERCENTAGE AS DISCOUNT_PERCENTAGE --  discount_percentage contains either a specific amount for the discount or a percentage to be used for the discount.&#xd;&#xa;      ,T.DISCOUNT_DAYS_DUE AS DISCOUNT_DAYS_DUE --  discount_days_due contains the number of days in the terms discount period by which payment is due if the terms of the discount are to be earned.&#xd;&#xa;      ,T.DISCOUNT_DUE_DATE AS DISCOUNT_DUE_DATE --  discount_due_date contains the date that the payment must be made by in order for the discount to be earned.&#xd;&#xa;      ,T.ORIGIN_STATION_CITY AS ORIGIN_STATION_CITY --  origin_station_city identifies the city in which the related shipment began.&#xd;&#xa;      ,T.ORIGIN_STATION_FSAC AS ORIGIN_STATION_FSAC --  origin_station_fsac identifies the fsac code for the station in which the related shipment began.&#xd;&#xa;      ,T.ORIGIN_STATION_SPLC AS ORIGIN_STATION_SPLC --  origin_station_splc identifies the splc code for the station in which the related shipment began.&#xd;&#xa;      ,T.ORIGIN_STATION_PROVINCE_CODE AS ORG_STATION_PROV_CODE --  origin_station_province_code identifies the province code in which the related shipment began.&#xd;&#xa;      ,T.ORIGIN_STATION_POSTAL_CODE AS ORG_STATION_POSTAL_CODE --  origin_station_postal_code identifies the postal code in which the related shipment began.&#xd;&#xa;      ,T.ORIGIN_COUNTRY_CODE3_GID AS ORG_COUNTRY_CODE3_GID --  gc3 global identifier for the entity.is created by concatenating domain name,&#x22;.&#x22; and xid.&#xd;&#xa;      ,T.DEST_STATION_CITY AS DEST_STATION_CITY --  dest_station_city identifies the city in which the related shipment ends.&#xd;&#xa;      ,T.DEST_STATION_FSAC AS DEST_STATION_FSAC --  origin_station_fsac identifies the fsac code for the station in which the related shipment ended.&#xd;&#xa;      ,T.DEST_STATION_SPLC AS DEST_STATION_SPLC --  the splc code for the destination of the shipment which relates to this invoice.&#xd;&#xa;      ,T.DEST_STATION_PROVINCE_CODE AS DEST_STATION_PRVN_CODE --  dest_station_province_code identifies the province code in which the related shipment ended.&#xd;&#xa;      ,T.DEST_STATION_POSTAL_CODE AS DEST_STATION_POSTAL_CODE --  dest_station_postal_code identifies the postal code in which the related shipment ended.&#xd;&#xa;      ,T.DEST_COUNTRY_CODE3_GID AS DEST_COUNTRY_CODE3_GID --  gc3 global identifier for the entity.is created by concatenating domain name,&#x22;.&#x22; and xid.&#xd;&#xa;      ,T.LETTER_OF_CREDIT_EXP_DATE AS LT_OF_CREDIT_EXP_DATE --  letter_of_credit_exp_date contains the date until which the letter of credit is in effect.after this date, the letter of credit expires.&#xd;&#xa;      ,T.LETTER_OF_CREDIT_ISSUE_DATE AS LT_OF_CREDIT_ISSUE_DATE --  letter_of_credit_issue_date contains the date that the letter of credit was issued.&#xd;&#xa;      ,T.LETTER_OF_CREDIT_NUMBER AS LETTER_OF_CREDIT_NUMBER --  letter_of_credit_number contains the identification number of the letter of credit.&#xd;&#xa;      ,T.VESSEL_CODE_QUALIFIER AS VESSEL_CODE_QUALIFIER --  vessel_code_qualifier identifies the qualifier for the vessel.&#xd;&#xa;      ,T.VESSEL_CODE AS VESSEL_CODE --  vessel_code identifies the vessel that was used for the shipment that relates to the invoice.&#xd;&#xa;      ,T.VESSEL_COUNTRY_CODE3_GID AS VESSEL_CTRY_CODE3_GID --  gc3 global identifier for the entity.is created by concatenating domain name,&#x22;.&#x22; and xid.&#xd;&#xa;      ,T.VESSEL_GID AS VESSEL_GID --  vessel id for the invoice&#xd;&#xa;      ,T.VES_OP_SERVPROV_ALIAS_QUAL_GID AS VES_OP_SERV_ALIAS_GID --  gc3 global identifier for the entity.is created by concatenating domain name,&#x22;.&#x22; and xid.&#xd;&#xa;      ,T.VES_OP_SERVPROV_ALIAS_VALUE AS VES_OP_SERV_ALIAS_VALUE --  service provider alias of the vessel operator.&#xd;&#xa;      ,T.VOYAGE_NUMBER AS VOYAGE_NUMBER --  voyage_number indicates the number of the voyage that relates to the shipment for which this invoice is being created.&#xd;&#xa;      ,T.PARENT_INVOICE_GID AS PARENT_INVOICE_GID --  gc3 global identifier for the entity.is created by concatenating domain name,&#x22;.&#x22; and xid.&#xd;&#xa;      ,T.DATE_RECEIVED AS DATE_RECEIVED --  the date the invoice was received.&#xd;&#xa;      ,T.INDICATOR AS INDICATOR --  &#xd;&#xa;      ,T.SUPPLY_COUNTRY_CODE3_GID AS SUPPLY_COUNTRY_CODE3_GID --  &#xd;&#xa;      ,T.SERVPROV_VAT_REG_NO_GID AS SERVPROV_VAT_REG_NO_GID --  &#xd;&#xa;      ,T.CUSTOMER_VAT_REG_NO_GID AS CUSTOMER_VAT_REG_NO_GID --  &#xd;&#xa;      ,T.VAT_EXEMPT_VALUE AS VAT_EXEMPT_VALUE --  &#xd;&#xa;      ,T.NET_AMT_DUE_WITH_TAX AS NET_AMT_DUE_WITH_TAX --  &#xd;&#xa;      ,T.NET_AMT_DUE_W_TAX_CURRENCY_GID AS NET_AMT_DUE_W_TAX_CURR_GID --  &#xd;&#xa;      ,T.NET_AMT_DUE_WITH_TAX_BASE AS NET_AMT_DUE_WITH_TAX_BASE --  &#xd;&#xa;      ,T.IS_PASS_THROUGH AS IS_PASS_THROUGH --  &#xd;&#xa;      ,T.CONSOLIDATION_TYPE AS CONSOLIDATION_TYPE --  &#xd;&#xa;      ,T.IS_FIXED_COST AS IS_FIXED_COST --  &#xd;&#xa;      ,T.BASE_CHARGE AS BASE_CHARGE --  &#xd;&#xa;      ,T.BASE_CHARGE_CURRENCY_GID AS BASE_CHARGE_CURRENCY_GID --  &#xd;&#xa;      ,T.BASE_CHARGE_BASE AS BASE_CHARGE_BASE --  &#xd;&#xa;      ,T.OTHER_CHARGE AS OTHER_CHARGE --  &#xd;&#xa;      ,T.OTHER_CHARGE_CURRENCY_GID AS OTHER_CHARGE_CURR_GID --  &#xd;&#xa;      ,T.OTHER_CHARGE_BASE AS OTHER_CHARGE_BASE --  &#xd;&#xa;      ,T.IS_CREDIT_NOTE AS IS_CREDIT_NOTE --  indicates if this invoice is a credit note&#xd;&#xa;      ,T.USER_DEFINED1_ICON_GID AS USER_DEFINED1_ICON_GID --  can store a user-defined icon that will appear within the user interface to help visually identify attributes of the invoice.&#xd;&#xa;      ,T.USER_DEFINED2_ICON_GID AS USER_DEFINED2_ICON_GID --  can store a user-defined icon that will appear within the user interface to help visually identify attributes of the invoice.&#xd;&#xa;      ,T.USER_DEFINED3_ICON_GID AS USER_DEFINED3_ICON_GID --  can store a user-defined icon that will appear within the user interface to help visually identify attributes of the invoice.&#xd;&#xa;      ,T.USER_DEFINED4_ICON_GID AS USER_DEFINED4_ICON_GID --  can store a user-defined icon that will appear within the user interface to help visually identify attributes of the invoice.&#xd;&#xa;      ,T.USER_DEFINED5_ICON_GID AS USER_DEFINED5_ICON_GID --  can store a user-defined icon that will appear within the user interface to help visually identify attributes of the invoice.&#xd;&#xa;      ,T.EXCHANGE_RATE_DATE AS EXCHANGE_RATE_DATE --  indicates the date to be used for any currency conversions&#x3b; if null, the latest conversion should be used.&#xd;&#xa;      ,T.EXCHANGE_RATE_GID AS EXCHANGE_RATE_GID --  indicates the set of exchange rates to use for currency conversions&#x3b; if null, the default set should be used&#xd;&#xa;      ,T.SAIL_DATE AS SAIL_DATE --  &#xd;&#xa;      ,T.SAIL_CUTOFF_DATE AS SAIL_CUTOFF_DATE --  &#xd;&#xa;      ,T.RAIL_DATE AS RAIL_DATE --  &#xd;&#xa;      ,T.IS_HAZARDOUS AS IS_HAZARDOUS --  &#xd;&#xa;      ,T.IS_TEMPERATURE_CONTROL AS IS_TEMPERATURE_CONTROL --  &#xd;&#xa;      ,T.INVOICING_PROCESS AS INVOICING_PROCESS --  &#xd;&#xa;      ,T.IS_VAT_ANALYSIS_FIXED AS IS_VAT_ANALYSIS_FIXED --  indicates if the vat analysis is fixed &#x28;user entered&#x29; and gc3 should not try to calculate it&#xd;&#xa;      ,T.ORIGINAL_INVOICE_GID AS ORIGINAL_INVOICE_GID --  for supplemental bills, references the original bill&#xd;&#xa;      ,T.DISCOUNT_AMT_FN AS DISCOUNT_AMT_FN --  functional currency amount for discount_amount&#xd;&#xa;      ,T.DISCOUNT_AMT_FN_CURRENCY_GID AS DISCOUNT_AMT_FN_CURR_GID --  &#xd;&#xa;      ,T.NET_AMOUNT_DUE_FN AS NET_AMOUNT_DUE_FN --  functional currency amount for net_amount_due&#xd;&#xa;      ,T.NET_AMOUNT_DUE_FN_CURRENCY_GID AS NET_AMT_DUE_FN_CURR_GID --  &#xd;&#xa;      ,T.NET_AMT_W_TAX_FN AS NET_AMT_W_TAX_FN --  functional currency amount for net_amount_due_with_tax&#xd;&#xa;      ,T.NET_AMT_W_TAX_FN_CURRENCY_GID AS NET_AMT_W_TAX_FN_CURR_GID --  &#xd;&#xa;      ,T.BASE_CHARGE_FN AS BASE_CHARGE_FN --  functional currency amount for base_charge&#xd;&#xa;      ,T.BASE_CHARGE_FN_CURRENCY_GID AS BASE_CHARGE_FN_CURR_GID --  &#xd;&#xa;      ,T.OTHER_CHARGE_FN AS OTHER_CHARGE_FN --  functional currency amount for other_charge&#xd;&#xa;      ,T.OTHER_CHARGE_FN_CURRENCY_GID AS OTHER_CHARGE_FN_CURR_GID --  &#xd;&#xa;      ,T.GL_DATE AS GL_DATE --  gl date for the invoice as set by agent or manual action&#xd;&#xa;      ,T.MARKED_FOR_PURGE AS MARKED_FOR_PURGE --  a boolean field. when it is set to &#x22;y&#x22;, this row and its child data will be purged.&#xd;&#xa;      ,T.ATTRIBUTE1 AS ATTRIBUTE1 --  &#x57fa;&#x5730;&#x540d;&#x79f0;&#xd;&#xa;      ,T.ATTRIBUTE2 AS ATTRIBUTE2 --  &#x8f66;&#x578b;&#x7ec4;&#xd;&#xa;      ,T.ATTRIBUTE3 AS ATTRIBUTE3 --  &#x5ba2;&#x6237;&#xd;&#xa;      ,T.ATTRIBUTE4 AS ATTRIBUTE4 --  &#x8d26;&#x5355;&#x6279;&#x6b21;&#x53f7;&#xd;&#xa;      ,T.ATTRIBUTE5 AS ATTRIBUTE5 --  &#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#xd;&#xa;      ,T.ATTRIBUTE6 AS ATTRIBUTE6 --  &#xd;&#xa;      ,T.ATTRIBUTE7 AS ATTRIBUTE7 --  &#xd;&#xa;      ,T.ATTRIBUTE8 AS ATTRIBUTE8 --  &#xd;&#xa;      ,T.ATTRIBUTE9 AS ATTRIBUTE9 --  VIN&#xd;&#xa;      ,T.ATTRIBUTE10 AS ATTRIBUTE10 --  &#x627f;&#x8fd0;&#x5546;&#xd;&#xa;      ,T.ATTRIBUTE11 AS ATTRIBUTE11 --  &#x53d1;&#x51fa;&#x57ce;&#x5e02;&#xd;&#xa;      ,T.ATTRIBUTE12 AS ATTRIBUTE12 --  &#x76ee;&#x7684;&#x57ce;&#x5e02;&#xd;&#xa;      ,T.ATTRIBUTE13 AS ATTRIBUTE13 --  &#x627f;&#x8fd0;&#x5546;&#x7b80;&#x79f0;&#xd;&#xa;      ,T.ATTRIBUTE14 AS ATTRIBUTE14 --  &#xd;&#xa;      ,T.ATTRIBUTE15 AS ATTRIBUTE15 --  &#xd;&#xa;      ,T.ATTRIBUTE16 AS ATTRIBUTE16 --  &#xd;&#xa;      ,T.ATTRIBUTE17 AS ATTRIBUTE17 --  &#xd;&#xa;      ,T.ATTRIBUTE18 AS ATTRIBUTE18 --  &#xd;&#xa;      ,T.ATTRIBUTE19 AS ATTRIBUTE19 --  &#xd;&#xa;      ,T.ATTRIBUTE20 AS ATTRIBUTE20 --  &#x54c1;&#x724c;&#xd;&#xa;      ,T.ATTRIBUTE_NUMBER1 AS ATTRIBUTE_NUMBER1 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER2 AS ATTRIBUTE_NUMBER2 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER3 AS ATTRIBUTE_NUMBER3 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER4 AS ATTRIBUTE_NUMBER4 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER5 AS ATTRIBUTE_NUMBER5 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER6 AS ATTRIBUTE_NUMBER6 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER7 AS ATTRIBUTE_NUMBER7 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER8 AS ATTRIBUTE_NUMBER8 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER9 AS ATTRIBUTE_NUMBER9 --  &#xd;&#xa;      ,T.ATTRIBUTE_NUMBER10 AS ATTRIBUTE_NUMBER10 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE1 AS ATTRIBUTE_DATE1 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE2 AS ATTRIBUTE_DATE2 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE3 AS ATTRIBUTE_DATE3 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE4 AS ATTRIBUTE_DATE4 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE5 AS ATTRIBUTE_DATE5 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE6 AS ATTRIBUTE_DATE6 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE7 AS ATTRIBUTE_DATE7 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE8 AS ATTRIBUTE_DATE8 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE9 AS ATTRIBUTE_DATE9 --  &#xd;&#xa;      ,T.ATTRIBUTE_DATE10 AS ATTRIBUTE_DATE10 --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY1 AS ATTRIBUTE_CURRENCY1 --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY1_GID AS ATTRIBUTE_CURRENCY1_GID --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY1_BASE AS ATTRIBUTE_CURRENCY1_BASE --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY2 AS ATTRIBUTE_CURRENCY2 --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY2_GID AS ATTRIBUTE_CURRENCY2_GID --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY2_BASE AS ATTRIBUTE_CURRENCY2_BASE --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY3 AS ATTRIBUTE_CURRENCY3 --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY3_GID AS ATTRIBUTE_CURRENCY3_GID --  &#xd;&#xa;      ,T.ATTRIBUTE_CURRENCY3_BASE AS ATTRIBUTE_CURRENCY3_BASE --  &#xd;&#xa;      ,T.DOMAIN_NAME AS DOMAIN_NAME --  &#xd;&#xa;      ,T.INSERT_USER AS INSERT_USER --  &#xd;&#xa;      ,T.INSERT_DATE AS INSERT_DATE --  &#xd;&#xa;      ,T.UPDATE_USER AS UPDATE_USER --  &#xd;&#xa;      ,T.UPDATE_DATE AS UPDATE_DATE --  &#xd;&#xa;      ,&#x27;OTM&#x27; AS SOURCE_CODE --&#x6e90;&#x7cfb;&#x7edf;&#x6807;&#x8bc6;&#xd;&#xa;      ,T.INVOICE_GID AS INTEGRATION_ID --&#x8bb0;&#x5f55;&#x552f;&#x4e00;&#x6807;&#x8bc6;&#xd;&#xa;      ,NULL AS AUX1_CHANGED_ON_DT --&#x539f;&#x7cfb;&#x7edf;&#x8bb0;&#x5f55;&#x521b;&#x5efa;&#x65f6;&#x95f4;&#xd;&#xa;      ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS W_INSERT_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x63d2;&#x5165;&#x65f6;&#x95f4;&#xd;&#xa;      ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS W_UPDATE_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x4fee;&#x6539;&#x65f6;&#x95f4;&#xd;&#xa;      ,&#x27;OTM&#x27; AS PART_SC --&#x6570;&#x636e;&#x6765;&#x6e90;&#xd;&#xa;      ,PART.PART_DT AS PART_DT --&#x5206;&#x533a;&#x65f6;&#x95f4;&#xd;&#xa;  FROM ODS_ZCOTM.INVOICE T&#xd;&#xa;  JOIN TEMP.TEMP_DW_TP_SHIPMENT_PART PART&#xd;&#xa;    ON REGEXP_REPLACE&#x28;SUBSTRING&#x28;T.INSERT_DATE, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; &#x3d;&#xd;&#xa;       PART.PART_DT&#xd;&#xa;  LEFT JOIN DIM.DIM_ORG O&#xd;&#xa;    ON T.ATTRIBUTE1 &#x3d; O.BASE_NAME&#xd;&#xa;   AND O.ORG_TYPE &#x3d; &#x27;B&#x27;&#xd;&#xa; WHERE T.DOMAIN_NAME &#x3d; &#x27;CMAL&#x2f;ZC&#x27;&#x3b;&#xd;&#xa;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>528</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>CREATE_TEMP_TAB</name>
+      <description/>
+      <type>SQL</type>
+      <sql>&#xd;&#xa;set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;CREATE_TEMP_TAB&#x3b;&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.auto.convert.join&#x3d;false&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CREATE TABLE IF NOT EXISTS TEMP.TEMP_DW_FIN_TPINVOICE_PART&#x28;&#xd;&#xa;PART_DT                        STRING                             COMMENT  &#x27;&#x5206;&#x533a;&#x65f6;&#x95f4;&#x27;&#xd;&#xa;&#x29; &#xd;&#xa;COMMENT &#x27;&#x5904;&#x7406;DW_&#x672c;&#x6b21;&#x7ffb;&#x724c;&#x5e94;&#x5904;&#x7406;&#x7684;&#x5206;&#x533a;&#x27;&#xd;&#xa;ROW FORMAT DELIMITED FIELDS TERMINATED BY &#x27;&#x5c;036&#x27;&#xd;&#xa;STORED AS PARQUET&#x3b;&#xd;&#xa;&#xd;&#xa;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>288</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>TO_TEMP_PART</name>
+      <description/>
+      <type>SQL</type>
+      <sql>set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;TO_TEMP_PART&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.auto.convert.join&#x3d;false&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--&#x5f97;&#x5230;&#x672c;&#x6b21;&#x7ffb;&#x724c;&#x65f6;&#x95f4;&#x5e94;&#x5904;&#x7406;&#x7684;&#x5206;&#x533a;&#xd;&#xa;&#xd;&#xa;INSERT OVERWRITE TABLE TEMP.TEMP_DW_FIN_TPINVOICE_PART&#xd;&#xa;&#xd;&#xa;SELECT  A.PART_DT&#xd;&#xa;  FROM &#x28;SELECT REGEXP_REPLACE&#x28;SUBSTR&#x28;T.INSERT_DATE, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; AS PART_DT&#xd;&#xa;          FROM ODS_ZCOTM.INVOICE T&#xd;&#xa;         WHERE 1 &#x3d; 1&#xd;&#xa;           AND REGEXP_REPLACE&#x28;SUBSTR&#x28;T.INSERT_DATE, 1, 10&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; &#x3e;&#x3d;&#xd;&#xa;               SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;, 1, 8&#x29;&#xd;&#xa;           AND REGEXP_REPLACE&#x28;SUBSTR&#x28;T.INSERT_DATE, 1, 10&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; &#x3c;&#x3d;&#xd;&#xa;               SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;END_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;, 1, 8&#x29;&#xd;&#xa;        --&#x521b;&#x5efa;&#x6708;&#x4efd;&#x4f5c;&#x4e3a;&#x5206;&#x533a;&#xd;&#xa;        UNION ALL&#xd;&#xa;        --&#x66f4;&#x65b0;&#x65f6;&#x95f4;&#x53d1;&#x751f;&#x5728;&#x589e;&#x91cf;&#x8303;&#x56f4;&#x5185;&#xff0c;&#x53d6;&#x51fa;&#x88ab;&#x66f4;&#x65b0;&#x7684;&#x521b;&#x5efa;&#x6708;&#x4efd;&#xd;&#xa;        SELECT REGEXP_REPLACE&#x28;SUBSTR&#x28;T.INSERT_DATE, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; AS PART_DT&#xd;&#xa;          FROM ODS_ZCOTM.INVOICE T&#xd;&#xa;         WHERE 1 &#x3d; 1&#xd;&#xa;           AND REGEXP_REPLACE&#x28;SUBSTR&#x28;T.UPDATE_DATE, 1, 10&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; &#x3e;&#x3d;&#xd;&#xa;               SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;, 1, 8&#x29;&#xd;&#xa;           AND REGEXP_REPLACE&#x28;SUBSTR&#x28;T.UPDATE_DATE, 1, 10&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; &#x3c;&#x3d;&#xd;&#xa;               SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;END_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;, 1, 8&#x29;&#x29; AS A&#xd;&#xa; GROUP BY A.PART_DT  &#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>416</xloc>
+      <yloc>112</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>START</from>
+      <to>GenPara</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>UPDATE_PARA</from>
+      <to>SUCCESS</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_DW</from>
+      <to>UPDATE_PARA</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>GenPara</from>
+      <to>CREATE_TEMP_TAB</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CREATE_TEMP_TAB</from>
+      <to>TO_TEMP_PART</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_TEMP_PART</from>
+      <to>TO_DW</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+    <notepad>
+      <note>&#x529f;&#x80fd;&#x8bf4;&#x660e;&#xff1a;&#x8fd0;&#x8f93;&#x53d1;&#x7968;&#xd;&#xa;&#x66f4;&#x65b0;&#x65b9;&#x5f0f;&#xff1a;APPEND&#xd;&#xa;&#x521b; &#x5efa; &#x4eba; &#xff1a;&#x590f;&#x6ce2; - &#x7f8e;&#x4e91;&#xd;&#xa;&#x521b;&#x5efa;&#x65e5;&#x671f;&#xff1a;2018&#x2f;07&#x2f;04&#xd;&#xa;&#x8fd0;&#x884c;&#x5468;&#x671f;&#xff1a;&#x8be5;&#x4f5c;&#x4e1a;&#x8fd0;&#x884c;&#x7684;&#x5468;&#x671f;,&#x5982;&#x65e5;&#x3001;&#x6708;&#x7b49;&#xd;&#xa;&#x4f8b;&#x3000;&#x3000;&#x7a0b;&#xff1a;&#x8c03;&#x7528;&#x8be5;&#x4f5c;&#x4e1a;&#x7684;&#x547d;&#x4ee4;&#x884c;&#x8bed;&#x53e5;,&#x542b;&#x8f93;&#x5165;&#x53c2;&#x6570;&#xd;&#xa;&#x5907;&#x3000;&#x3000;&#x6ce8;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x8bb0;&#x5f55;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x65e5;&#x671f;&#xff1a;</note>
+      <xloc>0</xloc>
+      <yloc>352</yloc>
+      <width>265</width>
+      <heigth>154</heigth>
+      <fontname>Microsoft YaHei UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+
+</job>

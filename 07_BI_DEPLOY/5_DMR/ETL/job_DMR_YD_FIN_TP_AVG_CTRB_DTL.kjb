@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_DMR_YD_FIN_TP_AVG_CTRB_DTL</name>
+    <description>&#x5730;&#x533a;&#x7ef4;&#x5ea6;</description>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>Hive</name>
+    <server>&#x24;&#x7b;CMALDW_HIVE_DB_HOST&#x7d;</server>
+    <type>HIVE2</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;CMALDW_HIVE_DB_NAME&#x7d;</database>
+    <port>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</port>
+    <username>&#x24;&#x7b;CMALDW_HIVE_DB_USER&#x7d;</username>
+    <password>&#x24;&#x7b;CMALDW_HIVE_DB_PASSWORD&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>336</xloc>
+      <yloc>256</yloc>
+      </entry>
+    <entry>
+      <name>SUCCESS</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>464</xloc>
+      <yloc>336</yloc>
+      </entry>
+    <entry>
+      <name>UPDATE_PARA</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_update_parameter.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>560</xloc>
+      <yloc>336</yloc>
+      </entry>
+    <entry>
+      <name>TO_DMR</name>
+      <description/>
+      <type>SQL</type>
+      <sql>set mapreduce.queue.name&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number&#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition&#x3d;true&#x3b;&#xd;&#xa;&#xd;&#xa;--target table in hive&#x3a; DMR.DMR_YD_FIN_TP_AVG_CTRB_DTL  &#x6574;&#x8f66;&#x7269;&#x6d41;&#x8d22;&#x52a1;&#x8fd0;&#x8f93;&#x5229;&#x6da6;&#x6765;&#x6e90;&#x5206;&#x6790;&#x8be6;&#x60c5;&#xff08;&#x5355;&#x8f66;&#x8d21;&#x732e;&#x7387;&#x53d8;&#x5316;&#x8d8b;&#x52bf;&#xff09;&#xd;&#xa;&#xd;&#xa;INSERT OVERWRITE TABLE DMR.DMR_YD_FIN_TP_AVG_CTRB_DTL PARTITION&#x28;PART_SC, PART_DT&#x29;&#xd;&#xa;SELECT substr&#x28;regexp_replace&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29; AS MONTH_ID &#xd;&#xa;    ,T.rgn_id&#xd;&#xa;    ,CASE WHEN T.rgn_id &#x3d; &#x27;ALL&#x27; THEN &#x27;&#x6574;&#x8f66;&#x4e8b;&#x4e1a;&#x90e8;&#x27;&#xd;&#xa;        WHEN T.rgn_id &#x3d; &#x27;-1&#x27; THEN &#x27;&#x672a;&#x77e5;&#x27; &#xd;&#xa;        ELSE T1.rgn_name END AS RNG_NAME&#xd;&#xa;    ,T.base_id&#xd;&#xa;    ,CASE WHEN T.base_id &#x3d; &#x27;ALL&#x27; THEN &#x27;&#x5168;&#x90e8;&#x27;&#xd;&#xa;        WHEN T.base_id &#x3d; &#x27;-1&#x27; THEN &#x27;&#x672a;&#x77e5;&#x27; &#xd;&#xa;        ELSE T2.base_name END AS BASE_NAME&#xd;&#xa;    ,T.brand_id&#xd;&#xa;    ,CASE WHEN T.brand_id &#x3d; &#x27;ALL&#x27; THEN &#x27;&#x6574;&#x4f53;&#x27;&#xd;&#xa;        WHEN T.brand_id &#x3d; &#x27;-1&#x27; THEN &#x27;&#x672a;&#x77e5;&#x27; &#xd;&#xa;        ELSE T3.brand_name END AS BRAND_NAME&#xd;&#xa;    ,&#x27;TP&#x27; AS BIZ_TYPE_ID  --&#x4e1a;&#x52a1;&#x5c5e;&#x6027;ID&#xd;&#xa;    ,&#x27;&#x8fd0;&#x8f93;&#x27; AS BIZ_TYPE_NAME  --&#x4e1a;&#x52a1;&#x5c5e;&#x6027;&#x540d;&#x79f0;&#xd;&#xa;    ,&#x27;-1&#x27; AS SROUCE_ID  --&#x6765;&#x6e90;ID&#xd;&#xa;    ,&#x27;-1&#x27; AS SROUCE_NAME  --&#x6765;&#x6e90;&#x540d;&#x79f0;&#xd;&#xa;    ,sum&#x28;CUR_TP_BIZ&#x29; AS FIN_BIZ_QTY  --&#x4e1a;&#x52a1;&#x91cf;&#x6b21;&#xd;&#xa;    ,sum&#x28;CUR_TP_COST&#x29;&#x2f;sum&#x28;CUR_TP_BIZ&#x29; AS FIN_AVG_COST  --&#x5355;&#x8f66;&#x6210;&#x672c;&#xd;&#xa;    ,sum&#x28;CUR_TP_INCOME&#x29;&#x2f;sum&#x28;CUR_TP_BIZ&#x29; AS FIN_AVG_INCOME  --&#x5355;&#x8f66;&#x6536;&#x5165;&#xd;&#xa;    ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS INSERT_TIME  --&#x63d2;&#x5165;&#x65f6;&#x95f4;&#xd;&#xa;    ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS UPDATE_TIME  --&#x66f4;&#x65b0;&#x65f6;&#x95f4;&#xd;&#xa;    ,&#x27;DMK&#x27; AS PART_SC&#xd;&#xa;    ,substr&#x28;regexp_replace&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29; AS PART_DT&#xd;&#xa;FROM&#x28;&#xd;&#xa;    SELECT coalesce&#x28;rgn_id,&#x27;ALL&#x27;&#x29; AS RGN_ID&#xd;&#xa;        ,coalesce&#x28;base_id,&#x27;ALL&#x27;&#x29; AS BASE_ID&#xd;&#xa;        ,coalesce&#x28;brand_id,&#x27;ALL&#x27;&#x29; AS BRAND_ID&#xd;&#xa;        ,sum&#x28;cur_tp_income&#x29; AS CUR_TP_INCOME  --&#xd;&#xa;        ,sum&#x28;cur_tp_cost&#x29; AS CUR_TP_COST  --&#xd;&#xa;        ,sum&#x28;cur_tp_biz&#x29; AS CUR_TP_BIZ  --&#xd;&#xa;    FROM TEMP.TEMP_DMR_YD_FIN_TP_AVG_CTRB_DTL_DETAIL&#xd;&#xa;    GROUP BY rgn_id,base_id,brand_id WITH CUBE&#xd;&#xa;    &#x29; T&#xd;&#xa;LEFT JOIN&#x28;&#xd;&#xa;    SELECT rgn_id,rgn_name&#xd;&#xa;    FROM DIM.dim_org &#xd;&#xa;    WHERE org_type &#x3d; &#x27;R&#x27;&#xd;&#xa;    GROUP BY rgn_id,rgn_name&#xd;&#xa;    &#x29; T1&#xd;&#xa;ON T.rgn_id &#x3d; T1.rgn_id&#xd;&#xa;LEFT JOIN&#x28;&#xd;&#xa;    SELECT base_id,base_name&#xd;&#xa;    FROM DIM.dim_org &#xd;&#xa;    WHERE org_type &#x3d; &#x27;B&#x27;&#xd;&#xa;    GROUP BY base_id,base_name&#xd;&#xa;    &#x29; T2&#xd;&#xa;ON T.base_id &#x3d; T2.base_id&#xd;&#xa;LEFT JOIN&#x28;&#xd;&#xa;    SELECT brand_id,brand_name&#xd;&#xa;    FROM DIM.dim_brand &#xd;&#xa;    GROUP BY brand_id,brand_name&#xd;&#xa;    &#x29; T3&#xd;&#xa;ON T.brand_id &#x3d; T3.brand_id&#xd;&#xa;WHERE 1&#x3d;1&#xd;&#xa;GROUP BY T.rgn_id,T.base_id,T.brand_id,T1.rgn_name,T2.base_name,T3.brand_name&#xd;&#xa;&#x3b;&#xd;&#xa;&#x2f;&#x2a;&#xd;&#xa;SELECT&#xd;&#xa;     SUBSTR&#x28;T.PERIOD_WID, 1, 6&#x29;                               AS MONTH_ID         --&#x6708;&#x4efd;ID&#xd;&#xa;    ,T.RGN_ID                                                 AS RNG_ID           --&#x5927;&#x533a;ID&#xd;&#xa;    ,RGN.RGN_NAME                                             AS RNG_NAME         --&#x5927;&#x533a;&#x540d;&#x79f0;&#xd;&#xa;    ,T.BASE_ID                                                AS BASE_ID          --&#x57fa;&#x5730;ID&#xd;&#xa;    ,BASE.BASE_NAME                                           AS BASE_NAME        --&#x57fa;&#x5730;&#x540d;&#x79f0;&#xd;&#xa;    ,T.BRAND_ID                                               AS BRAND_ID         --&#x54c1;&#x724c;ID&#xd;&#xa;    ,BRAND.BRAND_NAME                                         AS BRAND_NAME       --&#x54c1;&#x724c;&#x540d;&#x79f0;&#xd;&#xa;    ,BIZTYPE.BIZTYPE_ID                                       AS BIZ_TYPE_ID      --&#x4e1a;&#x52a1;&#x5c5e;&#x6027;ID&#xd;&#xa;    ,BIZTYPE.BIZTYPE_NAME                                     AS BIZ_TYPE_NAME    --&#x4e1a;&#x52a1;&#x5c5e;&#x6027;&#x540d;&#x79f0;&#xd;&#xa;    ,NULL                                                     AS SROUCE_ID        --&#x6765;&#x6e90;ID&#xd;&#xa;    ,NULL                                                     AS SROUCE_NAME      --&#x6765;&#x6e90;&#x540d;&#x79f0;&#xd;&#xa;    ,T.BIZ_NUM                                                AS FIN_BIZ_QTY      --&#x4e1a;&#x52a1;&#x91cf;&#x6b21;&#xd;&#xa;    ,T.INCOME &#x2f; T.BIZ_QTY                                     AS FIN_AVG_COST     --&#x5355;&#x8f66;&#x6210;&#x672c;&#xd;&#xa;    ,T.COST &#x2f; T.BIZ_QTY                                       AS FIN_AVG_INCOME   --&#x5355;&#x8f66;&#x6536;&#x5165;&#xd;&#xa;    ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29;   AS INSERT_TIME      --&#x63d2;&#x5165;&#x65f6;&#x95f4;&#xd;&#xa;    ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29;   AS UPDATE_TIME      --&#x66f4;&#x65b0;&#x65f6;&#x95f4;&#xd;&#xa;    ,&#x27;DMK&#x27;                                                    AS PART_SC&#xd;&#xa;    ,SUBSTR&#x28;T.PERIOD_WID, 1, 6&#x29;                               AS PART_DT&#xd;&#xa;FROM&#xd;&#xa;&#x28;&#xd;&#xa;SELECT S.PERIOD_WID&#xd;&#xa;      ,S.RGN_ID&#xd;&#xa;      ,S.BASE_ID&#xd;&#xa;      ,S.BRAND_ID&#xd;&#xa;      ,MAX&#x28;S.INCOME&#x29; AS INCOME&#xd;&#xa;      ,MAX&#x28;S.COST&#x29; AS COST&#xd;&#xa;      ,MAX&#x28;S.BIZ_QTY&#x29; AS BIZ_QTY&#xd;&#xa;      ,MAX&#x28;S.BIZ_NUM&#x29; AS BIZ_NUM&#xd;&#xa;  FROM &#x28;SELECT SUBSTR&#x28;A.PERIOD_WID, 1, 6&#x29; AS PERIOD_WID&#xd;&#xa;              ,A.RGN_ID&#xd;&#xa;              ,A.BASE_ID&#xd;&#xa;              ,A.BRAND_ID&#xd;&#xa;              ,SUM&#x28;INCOME_AMT&#x29; AS INCOME --SUM&#x28;A.TP_BIZ_INCOME_AMT&#x29; AS INCOME&#xd;&#xa;              ,SUM&#x28;COST_AMT&#x29;   AS COST --SUM&#x28;A.TP_BIZ_COST_AMT&#x29; AS COST&#xd;&#xa;              ,NULL AS BIZ_QTY&#xd;&#xa;              ,NULL AS BIZ_NUM&#xd;&#xa;          FROM DMK.DMK_FIN_TPBUDGET_D A--DMK.DMK_FIN_INCOMECOST_M A&#xd;&#xa;         WHERE A.PART_SC &#x3d; &#x27;DW&#x27;&#xd;&#xa;           AND A.PART_DT &#x3d;&#xd;&#xa;               REGEXP_REPLACE&#x28;SUBSTR&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29;&#xd;&#xa;         GROUP BY SUBSTR&#x28;A.PERIOD_WID, 1, 6&#x29;, A.RGN_ID, A.BASE_ID, A.BRAND_ID&#xd;&#xa;        UNION ALL&#xd;&#xa;        SELECT T.PERIOD_WID&#xd;&#xa;              ,T.RGN_ID&#xd;&#xa;              ,T.BASE_ID&#xd;&#xa;              ,T.BRAND_ID&#xd;&#xa;              ,NULL AS INCOME&#xd;&#xa;              ,NULL AS COST&#xd;&#xa;              ,SUM&#x28;CUR_M_VIN_CNT&#x29; AS BIZ_QTY&#xd;&#xa;              ,NULL AS BIZ_NUM&#xd;&#xa;          FROM &#x28;SELECT REGEXP_REPLACE&#x28;SUBSTRING&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; AS PERIOD_WID --&#x671f;&#x95f4;ID&#xd;&#xa;                      ,F.OC_ID --&#x8fd0;&#x8425;&#x4e2d;&#x5fc3;ID&#xd;&#xa;                      ,F.RGN_ID&#xd;&#xa;                      ,F.BASE_ID&#xd;&#xa;                      ,F.BRAND_ID&#xd;&#xa;                      ,F.PROJ_ID&#xd;&#xa;                      ,COUNT&#x28;DISTINCT CASE WHEN SUBSTR&#x28;F.UNLOAD_DAY, 1, 7&#x29; &#x3d; SUBSTR&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29; THEN F.VIN ELSE NULL END&#x29; AS CUR_M_VIN_CNT&#xd;&#xa;                  FROM DW.DW_TP_ORDERMOVEMENT F --&#x539f;&#x8868; DW.DW_TP_ORDERMOVEMENT&#x28;&#x8fd0;&#x8f93;&#x8def;&#x7531;&#x29;&#xd;&#xa;                  LEFT JOIN DIM.DIM_BRAND D&#xd;&#xa;                    ON F.BRAND_ID &#x3d; D.BRAND_ID&#xd;&#xa;                 WHERE F.PERSPECTIVE &#x3d; &#x27;B&#x27;&#xd;&#xa;                   AND F.SEGMETN_TRANSPORTMODE NOT IN &#x28;&#x27;ZT&#x27;&#x29; --&#x81ea;&#x63d0;&#x4e0d;&#x7b97;&#x4e1a;&#x52a1;&#x91cf;&#xd;&#xa;                   AND SUBSTR&#x28;F.UNLOAD_DAY, 1, 4&#x29; &#x3d;           --&#x957f;&#x5b89;&#x4f7f;&#x7528;&#x5378;&#x8239;&#x65e5;&#x671f;&#xd;&#xa;                       REGEXP_REPLACE&#x28;SUBSTRING&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 4&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29;&#xd;&#xa;                   AND F.BRAND_ID &#x3d; &#x27;CA&#x27;&#xd;&#xa;                 GROUP BY F.OC_ID&#xd;&#xa;                         ,F.RGN_ID&#xd;&#xa;                         ,F.BASE_ID&#xd;&#xa;                         ,F.BRAND_ID&#xd;&#xa;                         ,F.PROJ_ID&#xd;&#xa;                UNION ALL&#xd;&#xa;                SELECT REGEXP_REPLACE&#x28;SUBSTRING&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; AS PERIOD_WID --&#x671f;&#x95f4;ID&#xd;&#xa;                      ,F.OC_ID --&#x8fd0;&#x8425;&#x4e2d;&#x5fc3;ID&#xd;&#xa;                      ,F.RGN_ID&#xd;&#xa;                      ,F.BASE_ID&#xd;&#xa;                      ,F.BRAND_ID&#xd;&#xa;                      ,F.PROJ_ID&#xd;&#xa;                      ,COUNT&#x28;DISTINCT CASE WHEN SUBSTR&#x28;F.FACTORY_DAY, 1, 7&#x29; &#x3d; SUBSTR&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29; THEN F.VIN ELSE NULL END&#x29; AS CUR_M_VIN_CNT&#xd;&#xa;                  FROM DW.DW_TP_ORDERMOVEMENT F --&#x539f;&#x8868; DW.DW_TP_ORDERMOVEMENT&#x28;&#x8fd0;&#x8f93;&#x8def;&#x7531;&#x29;&#xd;&#xa;                  LEFT JOIN DIM.DIM_BRAND D&#xd;&#xa;                    ON F.BRAND_ID &#x3d; D.BRAND_ID&#xd;&#xa;                 WHERE F.PERSPECTIVE &#x3d; &#x27;B&#x27;&#xd;&#xa;                   AND F.SEGMETN_TRANSPORTMODE NOT IN &#x28;&#x27;ZT&#x27;&#x29; --&#x81ea;&#x63d0;&#x4e0d;&#x7b97;&#x4e1a;&#x52a1;&#x91cf;&#xd;&#xa;                   AND SUBSTR&#x28;F.FACTORY_DAY, 1, 4&#x29; &#x3d;         --&#x798f;&#x7279;&#x4f7f;&#x7528;&#x51fa;&#x5382;&#x65e5;&#x671f;&#xd;&#xa;                       REGEXP_REPLACE&#x28;SUBSTRING&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 4&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29;&#xd;&#xa;                   AND F.BRAND_ID &#x3d; &#x27;FT&#x27;&#xd;&#xa;                 GROUP BY F.OC_ID&#xd;&#xa;                         ,F.RGN_ID&#xd;&#xa;                         ,F.BASE_ID&#xd;&#xa;                         ,F.BRAND_ID&#xd;&#xa;                         ,F.PROJ_ID&#xd;&#xa;                UNION ALL&#xd;&#xa;                SELECT REGEXP_REPLACE&#x28;SUBSTRING&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; AS PERIOD_WID --&#x671f;&#x95f4;ID&#xd;&#xa;                      ,F.OC_ID --&#x8fd0;&#x8425;&#x4e2d;&#x5fc3;ID&#xd;&#xa;                      ,F.RGN_ID&#xd;&#xa;                      ,F.BASE_ID&#xd;&#xa;                      ,F.BRAND_ID&#xd;&#xa;                      ,F.PROJ_ID&#xd;&#xa;                      ,COUNT&#x28;DISTINCT CASE WHEN SUBSTR&#x28;F.EARLY_PICKUP_DATE, 1, 7&#x29; &#x3d; SUBSTR&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29; THEN F.VIN ELSE NULL END&#x29; AS CUR_M_VIN_CNT&#xd;&#xa;                  FROM DW.DW_TP_ORDERMOVEMENT F --&#x539f;&#x8868; DW.DW_TP_ORDERMOVEMENT&#x28;&#x8fd0;&#x8f93;&#x8def;&#x7531;&#x29;&#xd;&#xa;                  LEFT JOIN DIM.DIM_BRAND D&#xd;&#xa;                    ON F.BRAND_ID &#x3d; D.BRAND_ID&#xd;&#xa;                 WHERE F.PERSPECTIVE &#x3d; &#x27;B&#x27;&#xd;&#xa;                   AND F.SEGMETN_TRANSPORTMODE NOT IN &#x28;&#x27;ZT&#x27;&#x29; --&#x81ea;&#x63d0;&#x4e0d;&#x7b97;&#x4e1a;&#x52a1;&#x91cf;&#xd;&#xa;                   AND SUBSTR&#x28;F.EARLY_PICKUP_DATE, 1, 4&#x29; &#x3d;      --&#x5176;&#x5b83;&#x54c1;&#x724c;&#x4f7f;&#x7528;&#x8ba1;&#x5212;&#x65e5;&#xd;&#xa;                       REGEXP_REPLACE&#x28;SUBSTRING&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 4&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29;&#xd;&#xa;                   AND F.BRAND_ID NOT IN &#x28;&#x27;CA&#x27;, &#x27;FT&#x27;&#x29;&#xd;&#xa;                 GROUP BY F.OC_ID&#xd;&#xa;                         ,F.RGN_ID&#xd;&#xa;                         ,F.BASE_ID&#xd;&#xa;                         ,F.BRAND_ID&#xd;&#xa;                         ,F.PROJ_ID&#xd;&#xa;                &#x29; AS T&#xd;&#xa;         GROUP BY T.PERIOD_WID&#xd;&#xa;                 ,T.OC_ID&#xd;&#xa;                 ,T.RGN_ID&#xd;&#xa;                 ,T.BASE_ID&#xd;&#xa;                 ,T.BRAND_ID&#xd;&#xa;        UNION ALL&#xd;&#xa;        SELECT SUBSTR&#x28;A.PERIOD_WID, 1, 6&#x29; AS PERIOD_WID&#xd;&#xa;              ,A.RGN_ID&#xd;&#xa;              ,A.BASE_ID&#xd;&#xa;              ,A.BRAND_ID&#xd;&#xa;              ,NULL AS INCOME &#xd;&#xa;              ,NULL AS COST &#xd;&#xa;              ,NULL AS BIZ_QTY&#xd;&#xa;              ,SUM&#x28;A.SHIPPING_NUM&#x29; AS BIZ_NUM&#xd;&#xa;          FROM DMK.DMK_TP_OPERATE_D A &#xd;&#xa;         WHERE A.PART_SC &#x3d; &#x27;DW&#x27;&#xd;&#xa;           AND SUBSTR&#x28;A.PERIOD_WID, 1, 6&#x29; &#x3d;&#xd;&#xa;               REGEXP_REPLACE&#x28;SUBSTR&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29;&#xd;&#xa;         GROUP BY SUBSTR&#x28;A.PERIOD_WID, 1, 6&#x29;, A.RGN_ID, A.BASE_ID, A.BRAND_ID&#xd;&#xa;     &#xd;&#xa;         &#x29; S&#xd;&#xa; GROUP BY S.PERIOD_WID, S.RGN_ID, S.BASE_ID, S.BRAND_ID&#xd;&#xa;&#x29;T&#xd;&#xa;LEFT JOIN DIM.DIM_BIZTYPE BIZTYPE&#xd;&#xa;ON BIZTYPE.BIZTYPE_ID &#x3d; &#x27;TP&#x27;&#xd;&#xa;LEFT JOIN &#x28;SELECT RGN_ID, RGN_NAME FROM DIM.DIM_ORG WHERE ENABLE_FLAG &#x3d; &#x27;T&#x27; GROUP BY RGN_ID, RGN_NAME&#x29; RGN&#xd;&#xa;ON T.RGN_ID   &#x3d; RGN.RGN_ID&#xd;&#xa;LEFT JOIN &#x28;SELECT BASE_ID, BASE_NAME FROM DIM.DIM_ORG WHERE ENABLE_FLAG &#x3d; &#x27;T&#x27; GROUP BY BASE_ID, BASE_NAME&#x29; BASE&#xd;&#xa;ON T.BASE_ID  &#x3d; BASE.BASE_ID&#xd;&#xa;LEFT JOIN DIM.DIM_BRAND BRAND&#xd;&#xa;ON T.BRAND_ID &#x3d; BRAND.BRAND_ID&#xd;&#xa;AND BRAND.ENABLE_FLAG &#x3d; &#x27;T&#x27;&#xd;&#xa;--&#x5355;&#x8f66;&#x8fd0;&#x8f93;&#x6536;&#x5165;	&#x8d22;&#x52a1;&#x7ba1;&#x7406;&#x79d1;	&#x901a;&#x8fc7;&#x5173;&#x8054;&#x6307;&#x6807;&#x8ba1;&#x7b97;	&#x5355;&#x4e2a;&#x8f66;&#x8f86;&#x8fd0;&#x8f93;&#x8fc7;&#x7a0b;&#x4e2d;&#x4ea7;&#x751f;&#x7684;&#x603b;&#x6d41;&#x5165; &#x3d;&#x3e; &#x8fd0;&#x8f93;&#x6536;&#x5165;&#x2f; &#x603b;&#x4e1a;&#x52a1;&#x91cf;&#xd;&#xa;--&#x5355;&#x8f66;&#x8fd0;&#x8f93;&#x6210;&#x672c;	&#x8d22;&#x52a1;&#x7ba1;&#x7406;&#x79d1;	OTM&#x7cfb;&#x7edf;	&#x6574;&#x8f66;&#x8fd0;&#x8f93;&#x8fc7;&#x7a0b;&#x4e2d;&#xff0c;&#x5355;&#x4e2a;&#x8f66;&#x8f86;&#x6240;&#x53d1;&#x751f;&#x7684;&#x6240;&#x6709;&#x8fd0;&#x8f93;&#x6210;&#x672c;&#x5408;&#x8ba1; &#x3d;&#x3e; &#x603b;&#x8fd0;&#x8f93;&#x6210;&#x672c;&#x2f;&#x603b;&#x4e1a;&#x52a1;&#x91cf;&#xd;&#xa;&#xd;&#xa;--DMK_TP_PROJBIZQTY_M &#x8fd0;&#x8f93;&#x9879;&#x76ee;&#x7c92;&#x5ea6;&#x4e1a;&#x52a1;&#x91cf;&#x6708;&#x4efd;&#x7edf;&#x8ba1; &#x4e1a;&#x52a1;&#x91cf; use this&#xd;&#xa;--DMK_FIN_INCOMECOST_M&#xd;&#xa;--need to full join to make sure each rgn&#x26;base&#x26;brand could be computed&#xd;&#xa;--TP_BIZ_INCOME_AMT	&#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x6536;&#x5165;&#xd;&#xa;--TP_BIZ_COST_AMT	&#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x6210;&#x672c;&#xd;&#xa;&#x2a;&#x2f;&#xd;&#xa;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>608</xloc>
+      <yloc>256</yloc>
+      </entry>
+    <entry>
+      <name>GenPara</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_generate_parameteer.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>416</xloc>
+      <yloc>256</yloc>
+      </entry>
+    <entry>
+      <name>CREATE_TEMP_TAB</name>
+      <description/>
+      <type>SQL</type>
+      <sql>set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;CREATE_TEMP_TAB&#x3b;&#xd;&#xa;set mapreduce.queue.name&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number&#x3d;16&#x3b;&#xd;&#xa;set spark.app.name &#x3d; &#x24;&#x7b;Internal.Job.Name&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;DROP TABLE IF EXISTS TEMP.TEMP_DMR_YD_FIN_TP_AVG_CTRB_DTL_DETAIL&#x3b;&#xd;&#xa;CREATE TABLE IF NOT EXISTS TEMP.TEMP_DMR_YD_FIN_TP_AVG_CTRB_DTL_DETAIL&#x28;&#xd;&#xa;RGN_ID	STRING	COMMENT&#x27;&#x5927;&#x533a;ID&#x27;&#xd;&#xa;,BASE_ID STRING    COMMENT&#x27;&#x57fa;&#x5730;ID&#x27;&#xd;&#xa;,BRAND_ID STRING   COMMENT&#x27;&#x54c1;&#x724c;ID&#x27;&#xd;&#xa;,CUR_TP_INCOME	DECIMAL&#x28;32,8&#x29;	COMMENT&#x27;&#x5f53;&#x6708;&#x8fd0;&#x8f93;&#x6536;&#x5165;&#x27;&#xd;&#xa;,CUR_TP_COST	DECIMAL&#x28;32,8&#x29;	COMMENT&#x27;&#x5f53;&#x6708;&#x8fd0;&#x8f93;&#x6210;&#x672c;&#x27;&#xd;&#xa;,CUR_TP_BIZ	DECIMAL&#x28;32,8&#x29;	COMMENT&#x27;&#x5f53;&#x6708;&#x8fd0;&#x8f93;&#x4e1a;&#x52a1;&#x91cf;&#x27;&#xd;&#xa;&#x29; COMMENT &#x27;&#x8d85;&#x65f6;&#x8ba2;&#x5355;&#x660e;&#x7ec6;&#x27;&#xd;&#xa;ROW FORMAT DELIMITED FIELDS TERMINATED BY &#x27;&#x5c;036&#x27;&#xd;&#xa;STORED AS PARQUET&#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>464</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>TO_DETAIL</name>
+      <description/>
+      <type>SQL</type>
+      <sql>set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;TO_TEMP_1&#x3b;&#xd;&#xa;set mapreduce.queue.name&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number&#x3d;16&#x3b;&#xd;&#xa;set spark.app.name &#x3d; &#x24;&#x7b;Internal.Job.Name&#x7d;&#x3b;&#xd;&#xa;&#xd;&#xa;INSERT OVERWRITE TABLE TEMP.TEMP_DMR_YD_FIN_TP_AVG_CTRB_DTL_DETAIL&#xd;&#xa;SELECT A.RGN_ID&#xd;&#xa;    ,A.BASE_ID&#xd;&#xa;    ,A.BRAND_ID&#xd;&#xa;    ,A.CUR_TP_INCOME&#xd;&#xa;    ,A.CUR_TP_COST&#xd;&#xa;    ,B.CUR_TP_BIZ&#xd;&#xa;FROM&#x28;&#xd;&#xa;    SELECT coalesce&#x28;rgn_id,&#x27;-1&#x27;&#x29; AS RGN_ID&#xd;&#xa;        ,coalesce&#x28;base_id,&#x27;-1&#x27;&#x29; AS BASE_ID&#xd;&#xa;        ,coalesce&#x28;brand_id,&#x27;-1&#x27;&#x29; AS BRAND_ID&#xd;&#xa;        ,sum&#x28;income_amt&#x29; AS CUR_TP_INCOME&#xd;&#xa;        ,sum&#x28;cost_amt&#x29; AS CUR_TP_COST&#xd;&#xa;    from DMK.DMK_FIN_TPBUDGET_D A&#xd;&#xa;    LEFT JOIN DIM.dim_period_d B&#xd;&#xa;    ON A.period_wid &#x3d; B.period_wid AND B.period_type &#x3d; &#x27;D&#x27;&#xd;&#xa;    WHERE B.fin_in_month &#x3d; substr&#x28;regexp_replace&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29;&#xd;&#xa;    GROUP BY coalesce&#x28;rgn_id,&#x27;-1&#x27;&#x29;&#xd;&#xa;        ,coalesce&#x28;base_id,&#x27;-1&#x27;&#x29;&#xd;&#xa;        ,coalesce&#x28;brand_id,&#x27;-1&#x27;&#x29;&#xd;&#xa;    &#x29; A&#xd;&#xa;LEFT JOIN&#x28;&#xd;&#xa;    SELECT coalesce&#x28;rgn_id,&#x27;-1&#x27;&#x29; AS RGN_ID&#xd;&#xa;        ,coalesce&#x28;base_id,&#x27;-1&#x27;&#x29; AS BASE_ID&#xd;&#xa;        ,coalesce&#x28;brand_id,&#x27;1&#x27;&#x29; AS BRAND_ID&#xd;&#xa;        ,sum&#x28;shipping_num&#x29; AS CUR_TP_BIZ&#xd;&#xa;    FROM DMK.DMK_TP_OPERATE_D A&#xd;&#xa;    LEFT JOIN DIM.dim_period_d B&#xd;&#xa;    ON A.period_wid &#x3d; B.period_wid AND B.period_type &#x3d; &#x27;D&#x27;&#xd;&#xa;    WHERE B.fin_in_month &#x3d; substr&#x28;regexp_replace&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29;&#xd;&#xa;    GROUP BY coalesce&#x28;rgn_id,&#x27;-1&#x27;&#x29;&#xd;&#xa;        ,coalesce&#x28;base_id,&#x27;-1&#x27;&#x29;&#xd;&#xa;        ,coalesce&#x28;brand_id,&#x27;1&#x27;&#x29; &#xd;&#xa;    &#x29; B&#xd;&#xa;ON A.RGN_ID &#x3d; B.RGN_ID AND A.BASE_ID &#x3d; B.BASE_ID AND A.BRAND_ID &#x3d; B.BRAND_ID</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>560</xloc>
+      <yloc>176</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>UPDATE_PARA</from>
+      <to>SUCCESS</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_DMR</from>
+      <to>UPDATE_PARA</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>START</from>
+      <to>GenPara</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>GenPara</from>
+      <to>CREATE_TEMP_TAB</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CREATE_TEMP_TAB</from>
+      <to>TO_DETAIL</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_DETAIL</from>
+      <to>TO_DMR</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+    <notepad>
+      <note>&#x529f;&#x80fd;&#x8bf4;&#x660e;&#xff1a;DMR_YD_FIN_TP_AVG_CTRB_DTL&#xd;&#xa;&#x66f4;&#x65b0;&#x65b9;&#x5f0f;&#xff1a;REPLACE&#xd;&#xa;&#x521b; &#x5efa; &#x4eba; &#xff1a;&#x6768;&#x632f;&#x9e4f; - &#x7f8e;&#x4e91;&#xd;&#xa;&#x521b;&#x5efa;&#x65e5;&#x671f;&#xff1a;2018&#x2f;8&#x2f;16&#xd;&#xa;&#x8fd0;&#x884c;&#x5468;&#x671f;&#xff1a;&#x6708;&#xd;&#xa;&#x4f8b;&#x3000;&#x3000;&#x7a0b;&#xff1a;&#x8c03;&#x7528;&#x8be5;&#x4f5c;&#x4e1a;&#x7684;&#x547d;&#x4ee4;&#x884c;&#x8bed;&#x53e5;,&#x542b;&#x8f93;&#x5165;&#x53c2;&#x6570;&#xd;&#xa;&#x5907;&#x3000;&#x3000;&#x6ce8;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x8bb0;&#x5f55;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x65e5;&#x671f;&#xff1a;&#xd;&#xa;&#x7ef4; &#x62a4; &#x4eba; &#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x5185;&#x5bb9;&#xff1a;&#xd;&#xa;</note>
+      <xloc>16</xloc>
+      <yloc>16</yloc>
+      <width>268</width>
+      <heigth>203</heigth>
+      <fontname>Microsoft YaHei UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+
+</job>

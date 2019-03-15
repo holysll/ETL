@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_DW_TP_ORDERMOVEMENT</name>
+    <description>&#x5730;&#x533a;&#x7ef4;&#x5ea6;</description>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>Hive</name>
+    <server>&#x24;&#x7b;CMALDW_HIVE_DB_HOST&#x7d;</server>
+    <type>HIVE2</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;CMALDW_HIVE_DB_NAME&#x7d;</database>
+    <port>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</port>
+    <username>&#x24;&#x7b;CMALDW_HIVE_DB_USER&#x7d;</username>
+    <password>&#x24;&#x7b;CMALDW_HIVE_DB_PASSWORD&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>160</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>GenPara</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_generate_parameteer.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>256</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>SUCCESS</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>768</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>UPDATE_PARA</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_update_parameter.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>656</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>TO_DW</name>
+      <description/>
+      <type>SQL</type>
+      <sql>set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;TO_DW&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.auto.convert.join&#x3d;false&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--Insert Data&#xd;&#xa;INSERT OVERWRITE TABLE DW.DW_TP_ORDERMOVEMENT PARTITION&#x28;PART_SC, PART_DT&#x29;&#xd;&#xa;SELECT T.PERIOD_WID&#xd;&#xa;      ,T.ORDER_MOVEMENT_GID&#xd;&#xa;      ,T.ORDER_RELEASE_GID&#xd;&#xa;      ,T.BUDGET_SHIPMENT_GID&#xd;&#xa;      ,T.SEQ_NO&#xd;&#xa;      ,T.YD_NO&#xd;&#xa;      ,T.OC_ID&#xd;&#xa;      ,T.RGN_ID&#xd;&#xa;      ,T.BASE_ID&#xd;&#xa;      ,T.BASE_NAME&#xd;&#xa;      ,T.PROJ_ID AS PROJ_ID -- &#x9879;&#x76ee;&#xd;&#xa;      ,T.PROJ_NAME PROJ_NAME -- &#x9879;&#x76ee;&#x540d;&#x79f0;       &#xd;&#xa;      ,T.SOURCE_LOCATION_TYPE&#xd;&#xa;      ,T.SOURCE_LOCATION_ID&#xd;&#xa;      ,T.DEST_LOCATION_TYPE&#xd;&#xa;      ,T.DEST_LOCATION_ID&#xd;&#xa;      ,T.SOURCE_PRVN_ID&#xd;&#xa;      ,T.SOURCE_CTY_ID&#xd;&#xa;      ,T.DEST_PRVN_ID&#xd;&#xa;      ,T.DEST_CTY_ID&#xd;&#xa;      ,T.DLR_ID&#xd;&#xa;      ,T.SUPPLIER_ID&#xd;&#xa;      ,T.VIN&#xd;&#xa;      ,T.VIN_SIMPLE&#xd;&#xa;      ,T.BRAND_ID&#xd;&#xa;      ,T.PRODUCT_NAME&#xd;&#xa;      ,T.MODEL_ID&#xd;&#xa;      ,T.MDLGRP_ID&#xd;&#xa;      ,T.ALL_TRANSPORTMODE&#xd;&#xa;      ,T.SEGMETN_TRANSPORTMODE&#xd;&#xa;      ,T.TRANSPORTSTATUS&#xd;&#xa;      ,T.ORDER_STATUS&#xd;&#xa;      ,T.ALLOT_STAUS&#xd;&#xa;      ,T.EARLY_PICKUP_DATE&#xd;&#xa;      ,T.ICON4&#xd;&#xa;      ,T.ICON5&#xd;&#xa;      ,T.PERSPECTIVE&#xd;&#xa;      ,T.SERVPROV_GID&#xd;&#xa;      ,T.ORDER_RELEASE_NAME&#xd;&#xa;      ,T.DRIVER_PHONE&#xd;&#xa;      ,T.LIC_NO&#xd;&#xa;      ,T.ALLOT_NO&#xd;&#xa;      ,T.TICKET_UNIT&#xd;&#xa;      ,T.PLATE_NO&#xd;&#xa;      ,T.DRIVER_VOYAGE_RAIL&#xd;&#xa;      ,T.REST_REASON&#xd;&#xa;      ,T.LSP&#xd;&#xa;      ,T.SSP&#xd;&#xa;      ,T.ORDER_COMMENT&#xd;&#xa;      ,T.ON_PASSAGE_DAYS&#xd;&#xa;      ,T.IS_STORAGE&#xd;&#xa;      ,T.FACTORY_DAY&#xd;&#xa;      ,T.ARRANGE_DAY&#xd;&#xa;      ,T.OUT_STORE_DAY&#xd;&#xa;      ,T.ALLOT_PLN_DAY&#xd;&#xa;      ,T.DLVR_DAY&#xd;&#xa;      ,T.ARRIVAL_DAY&#xd;&#xa;      ,T.SHIPMENT_DAY&#xd;&#xa;      ,T.UNLOAD_DAY&#xd;&#xa;      ,T.LOAD_DAY&#xd;&#xa;      ,T.LEAVE_BASE_DAY&#xd;&#xa;      ,T.MILEGE&#xd;&#xa;      ,T.AMOUNT_VALUE&#xd;&#xa;      ,T.AMOUNT_COST&#xd;&#xa;      ,T.AMOUNT_SEQ_VALUE&#xd;&#xa;      ,T.AMOUNT_SEQ_COST&#xd;&#xa;      ,T.SOURCE_CODE --&#x6e90;&#x7cfb;&#x7edf;&#x6807;&#x8bc6;&#xd;&#xa;      ,T.ORDER_MOVEMENT_GID AS INTEGRATION_ID --&#x8bb0;&#x5f55;&#x552f;&#x4e00;&#x6807;&#x8bc6;&#xd;&#xa;      ,T.AUX1_CHANGED_ON_DT --&#x539f;&#x7cfb;&#x7edf;&#x8bb0;&#x5f55;&#x521b;&#x5efa;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.W_INSERT_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x63d2;&#x5165;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.W_UPDATE_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x4fee;&#x6539;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.PART_SC --&#x6570;&#x636e;&#x6765;&#x6e90;&#xd;&#xa;      ,T.PART_DT --&#x5206;&#x533a;&#x65f6;&#x95f4;&#xd;&#xa;FROM &#x28;&#xd;&#xa;SELECT T.PERIOD_WID&#xd;&#xa;      ,T.ORDER_MOVEMENT_GID&#xd;&#xa;      ,T.ORDER_RELEASE_GID&#xd;&#xa;      ,T.BUDGET_SHIPMENT_GID&#xd;&#xa;      ,T.SEQ_NO&#xd;&#xa;      ,T.YD_NO&#xd;&#xa;      ,T.OC_ID&#xd;&#xa;      ,T.RGN_ID&#xd;&#xa;      ,T.BASE_ID&#xd;&#xa;      ,T.BASE_NAME&#xd;&#xa;      ,T.PROJ_ID AS PROJ_ID -- &#x9879;&#x76ee;&#xd;&#xa;      ,T.PROJ_NAME PROJ_NAME -- &#x9879;&#x76ee;&#x540d;&#x79f0;       &#xd;&#xa;      ,T.SOURCE_LOCATION_TYPE&#xd;&#xa;      ,T.SOURCE_LOCATION_ID&#xd;&#xa;      ,T.DEST_LOCATION_TYPE&#xd;&#xa;      ,T.DEST_LOCATION_ID&#xd;&#xa;      ,T.SOURCE_PRVN_ID&#xd;&#xa;      ,T.SOURCE_CTY_ID&#xd;&#xa;      ,T.DEST_PRVN_ID&#xd;&#xa;      ,T.DEST_CTY_ID&#xd;&#xa;      ,T.DLR_ID&#xd;&#xa;      ,T.SUPPLIER_ID&#xd;&#xa;      ,T.VIN&#xd;&#xa;      ,T.VIN_SIMPLE&#xd;&#xa;      ,T.BRAND_ID&#xd;&#xa;      ,T.PRODUCT_NAME&#xd;&#xa;      ,T.MODEL_ID&#xd;&#xa;      ,T.MDLGRP_ID&#xd;&#xa;      ,T.ALL_TRANSPORTMODE&#xd;&#xa;      ,T.SEGMETN_TRANSPORTMODE&#xd;&#xa;      ,T.TRANSPORTSTATUS&#xd;&#xa;      ,T.ORDER_STATUS&#xd;&#xa;      ,T.ALLOT_STAUS&#xd;&#xa;      ,T.EARLY_PICKUP_DATE&#xd;&#xa;      ,T.ICON4&#xd;&#xa;      ,T.ICON5&#xd;&#xa;      ,T.PERSPECTIVE&#xd;&#xa;      ,T.SERVPROV_GID&#xd;&#xa;      ,T.ORDER_RELEASE_NAME&#xd;&#xa;      ,T.DRIVER_PHONE&#xd;&#xa;      ,T.LIC_NO&#xd;&#xa;      ,T.ALLOT_NO&#xd;&#xa;      ,T.TICKET_UNIT&#xd;&#xa;      ,T.PLATE_NO&#xd;&#xa;      ,T.DRIVER_VOYAGE_RAIL&#xd;&#xa;      ,T.REST_REASON&#xd;&#xa;      ,T.LSP&#xd;&#xa;      ,T.SSP&#xd;&#xa;      ,T.ORDER_COMMENT&#xd;&#xa;      ,T.ON_PASSAGE_DAYS&#xd;&#xa;      ,T.IS_STORAGE&#xd;&#xa;      ,T.FACTORY_DAY&#xd;&#xa;      ,T.ARRANGE_DAY&#xd;&#xa;      ,T.OUT_STORE_DAY&#xd;&#xa;      ,T.ALLOT_PLN_DAY&#xd;&#xa;      ,NVL&#x28;T.DLVR_DAY,T.ARRIVAL_DAY&#x29; AS DLVR_DAY      --&#x5982;&#x679c;&#x6ca1;&#x6709;&#x5230;&#x8fbe;&#x65f6;&#x95f4;&#xff0c;&#x4f46;&#x662f;&#x6709;&#x4ea4;&#x8f66;&#x65f6;&#x95f4;&#xff0c;&#x9ed8;&#x8ba4;&#x4e3a;&#x5df2;&#x5230;&#x8fbe;&#xd;&#xa;      ,CASE WHEN T.BRAND_ID &#x3d; &#x27;FT&#x27; THEN T.DLVR_DAY ELSE T.ARRIVAL_DAY END AS ARRIVAL_DAY   --&#x798f;&#x7279;&#x7684;&#x5230;&#x8fbe;&#x4e0e;&#x4ea4;&#x8f66;&#x4e3a;&#x540c;&#x4e00;&#x4e2a;&#x5b57;&#x6bb5;&#xd;&#xa;      ,T.SHIPMENT_DAY&#xd;&#xa;      ,T.UNLOAD_DAY&#xd;&#xa;      ,T.LOAD_DAY&#xd;&#xa;      ,T.LEAVE_BASE_DAY&#xd;&#xa;      ,T.MILEGE&#xd;&#xa;      ,T.AMOUNT_VALUE&#xd;&#xa;      ,T.AMOUNT_COST&#xd;&#xa;      ,T.AMOUNT_SEQ_VALUE&#xd;&#xa;      ,T.AMOUNT_SEQ_COST&#xd;&#xa;      ,T.SOURCE_CODE --&#x6e90;&#x7cfb;&#x7edf;&#x6807;&#x8bc6;&#xd;&#xa;      ,T.ORDER_MOVEMENT_GID AS INTEGRATION_ID --&#x8bb0;&#x5f55;&#x552f;&#x4e00;&#x6807;&#x8bc6;&#xd;&#xa;      ,T.AUX1_CHANGED_ON_DT --&#x539f;&#x7cfb;&#x7edf;&#x8bb0;&#x5f55;&#x521b;&#x5efa;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.W_INSERT_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x63d2;&#x5165;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.W_UPDATE_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x4fee;&#x6539;&#x65f6;&#x95f4;&#xd;&#xa;      ,T.PART_SC --&#x6570;&#x636e;&#x6765;&#x6e90;&#xd;&#xa;      ,T.PART_DT --&#x5206;&#x533a;&#x65f6;&#x95f4;&#xd;&#xa;      ,ROW_NUMBER&#x28;&#x29;OVER&#x28;PARTITION BY T.ORDER_MOVEMENT_GID ORDER BY PERIOD_WID DESC&#x29; AS RN&#xd;&#xa;  FROM TEMP.TEMP_DW_TP_ORDERMOVEMENT T &#x29; AS T&#xd;&#xa;WHERE T.RN &#x3d; 1&#xd;&#xa;  AND PART_DT &#x3e;&#x3d; &#x27;201708&#x27;&#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>576</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>TO_TEMP</name>
+      <description/>
+      <type>SQL</type>
+      <sql>set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;TO_DW&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.auto.convert.join&#x3d;false&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--Insert Data&#xd;&#xa;INSERT OVERWRITE TABLE TEMP.TEMP_DW_TP_ORDERMOVEMENT &#xd;&#xa;SELECT CASE&#xd;&#xa;         WHEN T.BRAND_ID &#x3d; &#x27;FT&#x27; THEN&#xd;&#xa;          SUBSTR&#x28;REGEXP_REPLACE&#x28;T.FACTORY_DAY,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,8&#x29;   &#xd;&#xa;         WHEN T.BRAND_ID &#x3d; &#x27;CA&#x27; THEN&#xd;&#xa;          SUBSTR&#x28;REGEXP_REPLACE&#x28;T.UNLOAD_DAY,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,8&#x29;  &#xd;&#xa;         ELSE&#xd;&#xa;          SUBSTR&#x28;REGEXP_REPLACE&#x28;T.EARLY_PICKUP_DATE,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,8&#x29; &#xd;&#xa;       END AS PERIOD_WID&#xd;&#xa;      ,T.ORDER_MOVEMENT_GID&#xd;&#xa;      ,T.ORDER_RELEASE_GID&#xd;&#xa;      ,T.BUDGET_SHIPMENT_GID&#xd;&#xa;      ,T.SEQ_NO&#xd;&#xa;      ,T.YD_NO&#xd;&#xa;      ,T.OC_ID&#xd;&#xa;      ,T.RGN_ID&#xd;&#xa;      ,T.BASE_ID&#xd;&#xa;      ,T.BASE_NAME&#xd;&#xa;      ,P.PROJ_ID AS PROJ_ID -- &#x9879;&#x76ee;&#xd;&#xa;      ,P.PROJ_NAME PROJ_NAME -- &#x9879;&#x76ee;&#x540d;&#x79f0;       &#xd;&#xa;      ,T.SOURCE_LOCATION_TYPE&#xd;&#xa;      ,T.SOURCE_LOCATION_ID&#xd;&#xa;      ,T.DEST_LOCATION_TYPE&#xd;&#xa;      ,T.DEST_LOCATION_ID&#xd;&#xa;      ,T.SOURCE_PRVN_ID&#xd;&#xa;      ,T.SOURCE_CTY_ID&#xd;&#xa;      ,T.DEST_PRVN_ID&#xd;&#xa;      ,T.DEST_CTY_ID&#xd;&#xa;      ,T.DLR_ID&#xd;&#xa;      ,T.SUPPLIER_ID&#xd;&#xa;      ,T.VIN&#xd;&#xa;      ,T.VIN_SIMPLE&#xd;&#xa;      ,T.BRAND_ID&#xd;&#xa;      ,T.PRODUCT_NAME&#xd;&#xa;      ,T.MODEL_ID&#xd;&#xa;      ,T.MDLGRP_ID&#xd;&#xa;      ,T.ALL_TRANSPORTMODE&#xd;&#xa;      ,T.SEGMETN_TRANSPORTMODE&#xd;&#xa;      ,T.TRANSPORTSTATUS&#xd;&#xa;      ,T.ORDER_STATUS&#xd;&#xa;      ,T.ALLOT_STAUS&#xd;&#xa;      ,T.EARLY_PICKUP_DATE&#xd;&#xa;      ,T.ICON4&#xd;&#xa;      ,T.ICON5&#xd;&#xa;      ,T.PERSPECTIVE&#xd;&#xa;      ,T.SERVPROV_GID&#xd;&#xa;      ,T.ORDER_RELEASE_NAME&#xd;&#xa;      ,T.DRIVER_PHONE&#xd;&#xa;      ,T.LIC_NO&#xd;&#xa;      ,T.ALLOT_NO&#xd;&#xa;      ,T.TICKET_UNIT&#xd;&#xa;      ,T.PLATE_NO&#xd;&#xa;      ,T.DRIVER_VOYAGE_RAIL&#xd;&#xa;      ,T.REST_REASON&#xd;&#xa;      ,T.LSP&#xd;&#xa;      ,T.SSP&#xd;&#xa;      ,T.ORDER_COMMENT&#xd;&#xa;      ,T.ON_PASSAGE_DAYS&#xd;&#xa;      ,T.IS_STORAGE&#xd;&#xa;      ,T.FACTORY_DAY&#xd;&#xa;      ,T.ARRANGE_DAY&#xd;&#xa;      ,T.OUT_STORE_DAY&#xd;&#xa;      ,T.ALLOT_PLN_DAY&#xd;&#xa;      ,T.DLVR_DAY&#xd;&#xa;      ,T.ARRIVAL_DAY&#xd;&#xa;      ,T.SHIPMENT_DAY&#xd;&#xa;      ,T.UNLOAD_DAY&#xd;&#xa;      ,T.LOAD_DAY&#xd;&#xa;      ,T.LEAVE_BASE_DAY&#xd;&#xa;      ,T.MILEGE&#xd;&#xa;      ,T.AMOUNT_VALUE&#xd;&#xa;      ,T.AMOUNT_COST&#xd;&#xa;      ,T.AMOUNT_SEQ_VALUE&#xd;&#xa;      ,T.AMOUNT_SEQ_COST&#xd;&#xa;      ,&#x27;OTM&#x27; AS SOURCE_CODE --&#x6e90;&#x7cfb;&#x7edf;&#x6807;&#x8bc6;&#xd;&#xa;      ,T.ORDER_MOVEMENT_GID AS INTEGRATION_ID --&#x8bb0;&#x5f55;&#x552f;&#x4e00;&#x6807;&#x8bc6;&#xd;&#xa;      ,NULL AS AUX1_CHANGED_ON_DT --&#x539f;&#x7cfb;&#x7edf;&#x8bb0;&#x5f55;&#x521b;&#x5efa;&#x65f6;&#x95f4;&#xd;&#xa;      ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS W_INSERT_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x63d2;&#x5165;&#x65f6;&#x95f4;&#xd;&#xa;      ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;&#x29;, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x27;&#x29; AS W_UPDATE_DT --&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x4fee;&#x6539;&#x65f6;&#x95f4;&#xd;&#xa;      ,&#x27;OTM&#x27; AS PART_SC --&#x6570;&#x636e;&#x6765;&#x6e90;&#xd;&#xa;      ,T.PART_DT AS PART_DT --&#x5206;&#x533a;&#x65f6;&#x95f4;&#xd;&#xa;  FROM &#x28;SELECT P.PART_DT &#xd;&#xa;              ,T.ORDER_MOVEMENT_GID AS ORDER_MOVEMENT_GID -- &#x5206;&#x6bb5;&#x8def;&#x7531;GID&#xd;&#xa;              ,T.ORDER_RELEASE_GID AS ORDER_RELEASE_GID --OTM&#x8ba2;&#x5355;ID&#xd;&#xa;              ,T.SHIPMENT_GID AS BUDGET_SHIPMENT_GID --&#x8fd0;&#x8f93;&#xff08;&#x8d22;&#x52a1;&#xff09;id&#xd;&#xa;              ,NVL&#x28;T.SEQ_NO, SUBSTR&#x28;T.ORDER_MOVEMENT_GID, -1, 1&#x29;&#x29; AS SEQ_NO -- &#x8def;&#x7531;&#x5e8f;&#x5217;&#x53f7;&#xd;&#xa;              ,R1.OM_REFNUM_VALUE AS YD_NO -- &#x8fd0;&#x5355;&#x53f7;&#xd;&#xa;              ,&#x27;CMAL&#x2f;ZC&#x27; AS OC_ID -- &#x8fd0;&#x8425;&#x4e2d;&#x5fc3;&#xd;&#xa;              ,NVL&#x28;O.RGN_ID, &#x27;CMAL&#x2f;ZC&#x2f;-1&#x27;&#x29; AS RGN_ID -- &#x5927;&#x533a;,&#x5173;&#x8054;DIM_ORG.BASE_ID&#xd;&#xa;              ,NVL&#x28;O.BASE_ID, &#x27;CMAL&#x2f;ZC.-1&#x27;&#x29; AS BASE_ID -- &#x57fa;&#x5730;,&#x5173;&#x8054;DIM_ORG.STR_ID&#xd;&#xa;              ,COALESCE&#x28;O.BASE_NAME, T.ATTRIBUTE1, &#x27;&#x672a;&#x77e5;&#x27;&#x29; AS BASE_NAME -- &#x57fa;&#x5730;&#x540d;&#x79f0;,&#x5173;&#x8054;DIM_ORG.STR_ID&#xd;&#xa;              ,NVL&#x28;O.BASE_TYPE, &#x27;-1&#x27;&#x29; AS SOURCE_LOCATION_TYPE -- &#x59cb;&#x53d1;&#x5730;&#x7c7b;&#x578b;&#xff0c;&#x5173;&#x8054;DIM_ORG.STR_ID&#xd;&#xa;              ,T.SOURCE_LOCATION_GID AS SOURCE_LOCATION_ID -- &#x59cb;&#x53d1;&#x5730;ID&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN DO.ORG_ID IS NOT NULL THEN&#xd;&#xa;                  DO.BASE_TYPE&#xd;&#xa;                 WHEN D.DLR_ID IS NOT NULL THEN&#xd;&#xa;                  &#x27;DLR&#x27;&#xd;&#xa;                 ELSE&#xd;&#xa;                  &#x27;-1&#x27;&#xd;&#xa;               END AS DEST_LOCATION_TYPE -- &#x76ee;&#x7684;&#x5730;&#x7c7b;&#x578b;,&#x5173;&#x8054;DIM_ORG.STR_ID &#x4e0e; DIM_DEALER.DLR_ID&#xd;&#xa;              ,T.DEST_LOCATION_GID AS DEST_LOCATION_ID -- &#x76ee;&#x7684;&#x5730;ID &#x5173;&#x8054;DIM_ORG.STR_ID &#x4e0e; DIM_DEALER.DLR_ID&#xd;&#xa;              ,NVL&#x28;O.PRVN_ID, &#x27;-1&#x27;&#x29; AS SOURCE_PRVN_ID --&#x59cb;&#x53d1;&#x5730;&#x7701;&#x4efd;&#xff0c;&#x5173;&#x8054;DIM_ORG.STR_ID&#xd;&#xa;              ,NVL&#x28;O.CITY_ID, &#x27;-1&#x27;&#x29; AS SOURCE_CTY_ID --&#x59cb;&#x53d1;&#x5730;&#x57ce;&#x5e02;&#xff0c;&#x5173;&#x8054;DIM_ORG.STR_ID&#xd;&#xa;              ,COALESCE&#x28;DO.PRVN_ID, D.PRVN_ID, T.ATTRIBUTE11, &#x27;-1&#x27;&#x29; AS DEST_PRVN_ID -- &#x76ee;&#x7684;&#x5730;&#x7701;&#x4efd;  &#xd;&#xa;              ,COALESCE&#x28;DO.CITY_ID, D.CITY_ID, T.ATTRIBUTE12, &#x27;-1&#x27;&#x29; AS DEST_CTY_ID -- &#x76ee;&#x7684;&#x5730;&#x57ce;&#x5e02;&#xd;&#xa;              ,T.ATTRIBUTE13 AS DLR_ID -- &#x4e3b;&#x673a;&#x5382;&#x7ecf;&#x9500;&#x5e97;ID&#xd;&#xa;              --,T.SHIP_WITH_GROUP AS SUPPLIER_ID -- &#x627f;&#x8fd0;&#x5546;&#xd;&#xa;              ,T.ATTRIBUTE18 AS SUPPLIER_ID -- &#x627f;&#x8fd0;&#x5546;&#xd;&#xa;              ,T.ATTRIBUTE9 AS VIN -- VIN&#x7801;&#xd;&#xa;              ,T.ATTRIBUTE15 AS VIN_SIMPLE -- VIN&#x7b80;&#x7801;&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.ATTRIBUTE2 LIKE &#x27;&#x25;&#x798f;&#x7279;&#x25;&#x27; THEN&#xd;&#xa;                  &#x27;FT&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE2 LIKE &#x27;&#x25;&#x8f7b;&#x578b;&#x8f66;&#x25;&#x27; THEN&#xd;&#xa;                  &#x27;CA&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE2 LIKE &#x27;&#x25;&#x89c2;&#x81f4;&#x25;&#x27; THEN&#xd;&#xa;                  &#x27;GZ&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE2 LIKE &#x27;&#x25;&#x8f7f;&#x8f66;&#x25;&#x27; THEN&#xd;&#xa;                  &#x27;CA&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE2 LIKE &#x27;&#x25;&#x5fae;&#x8f66;&#x25;&#x27; THEN&#xd;&#xa;                  &#x27;CA&#x27;&#xd;&#xa;                 ELSE&#xd;&#xa;                  NULL&#xd;&#xa;               END BRAND_ID -- &#x54c1;&#x724c;ID&#xd;&#xa;              ,T.ATTRIBUTE4 AS PRODUCT_NAME -- &#x4e3b;&#x673a;&#x5382;&#x8f66;&#x578b;&#x4ee3;&#x7801; - &#x989c;&#x8272; - &#x5206;&#x7c7b;&#xd;&#xa;              ,SPLIT&#x28;REGEXP_REPLACE&#x28;T.ATTRIBUTE4, &#x27;-&#x27;, &#x27;.&#x27;&#x29;, &#x27;&#x5c;&#x5c;.&#x27;&#x29; &#x5b; 0 &#x5d; AS MODEL_ID -- &#x8f66;&#x578b;ID&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.ATTRIBUTE2 &#x3d; &#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27; AND T.SEQ_NO &#x3d; &#x27;1&#x27; THEN&#xd;&#xa;                  B3.CAR_TYPE_GROUP&#xd;&#xa;                 WHEN T.ATTRIBUTE2 &#x3d; &#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27; AND T.SEQ_NO &#x3d; &#x27;2&#x27; THEN&#xd;&#xa;                  B3.CAR_TYPE_GROUP_TRANSFER&#xd;&#xa;                 WHEN T.ATTRIBUTE2 NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29;  THEN&#xd;&#xa;                  B1.CAR_TYPE_GROUP &#xd;&#xa;                 ELSE&#xd;&#xa;                  NULL&#xd;&#xa;               END AS MDLGRP_ID -- &#x8f66;&#x578b;&#x7ec4;&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.ATTRIBUTE2 &#x3d; &#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27; THEN&#xd;&#xa;                  B3.ORIGINAL_TRANSPORT_MODE&#xd;&#xa;                 ELSE&#xd;&#xa;                  NULL&#xd;&#xa;               END AS ALL_TRANSPORTMODE&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.ATTRIBUTE6 &#x3d; &#x27;&#x6c34;&#x8def;&#x27; THEN&#xd;&#xa;                  &#x27;SL&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE6 &#x3d; &#x27;&#x516c;&#x8def;&#x27; THEN&#xd;&#xa;                  &#x27;GL&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE6 &#x3d; &#x27;&#x94c1;&#x8def;&#x27; THEN&#xd;&#xa;                  &#x27;TL&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE6 &#x3d; &#x27;&#x4eba;&#x5de5;&#x27; THEN&#xd;&#xa;                  &#x27;LP&#x27;&#xd;&#xa;                 WHEN T.ATTRIBUTE6 &#x3d; &#x27;&#x81ea;&#x63d0;&#x27; THEN&#xd;&#xa;                  &#x27;ZT&#x27;&#xd;&#xa;                 ELSE&#xd;&#xa;                  T.ATTRIBUTE6&#xd;&#xa;               END AS SEGMETN_TRANSPORTMODE -- &#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.NEWPLAN&#x27; THEN&#xd;&#xa;                  &#x27;&#x8ba1;&#x5212;&#x672a;&#x51fa;&#x5e93;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.STOCKOUT&#x27; THEN&#xd;&#xa;                  &#x27;&#x5df2;&#x51fa;&#x5e93;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.XSTOCKOUT&#x27; THEN&#xd;&#xa;                  &#x27;&#x4e2d;&#x8f6c;&#x51fa;&#x5e93;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.STOCKDEPARTED&#x27; THEN&#xd;&#xa;                  &#x27;&#x51fa;&#x573a;&#x5728;&#x9014;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.XSTOCKDEPARTED&#x27; THEN&#xd;&#xa;                  &#x27;&#x4e2d;&#x8f6c;&#x51fa;&#x573a;&#x5728;&#x9014;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.ARRIVED&#x27; THEN&#xd;&#xa;                  &#x27;&#x5230;&#x8fbe;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.XSTOCKIN&#x27; THEN&#xd;&#xa;                  &#x27;&#x4e2d;&#x8f6c;&#x5165;&#x5e93;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED3_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.VIECHLEDELIVERED&#x27; THEN&#xd;&#xa;                  &#x27;&#x4ea4;&#x8f66;&#x27;&#xd;&#xa;                 ELSE&#xd;&#xa;                  T.USER_DEFINED3_ICON_GID&#xd;&#xa;               END AS TRANSPORTSTATUS -- &#x8fd0;&#x8f93;&#x72b6;&#x6001;&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.USER_DEFINED1_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.UNASSIGN&#x27; THEN&#xd;&#xa;                  &#x27;&#x672a;&#x5206;&#x914d;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED1_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.ASSIGNED&#x27; THEN&#xd;&#xa;                  &#x27;&#x5df2;&#x5206;&#x914d;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED1_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.LSPCONFIRMED&#x27; THEN&#xd;&#xa;                  &#x27;&#x5206;&#x914d;&#x5df2;&#x786e;&#x8ba4;&#x27;&#xd;&#xa;                 WHEN T.USER_DEFINED1_ICON_GID &#x3d; &#x27;CMAL&#x2f;ZC.DISPATCHED&#x27; THEN&#xd;&#xa;                  &#x27;&#x5df2;&#x53d1;&#x8fd0;&#x7533;&#x8bf7;&#x27;&#xd;&#xa;                 ELSE&#xd;&#xa;                  T.USER_DEFINED1_ICON_GID&#xd;&#xa;               END AS ORDER_STATUS -- &#x8ba2;&#x5355;&#x72b6;&#x6001;&#xd;&#xa;              ,T.USER_DEFINED2_ICON_GID AS ALLOT_STAUS -- &#x5206;&#x914d;&#x72b6;&#x6001;&#x28;NEW&#x2f;PROCESS&#x2f;SUCCESS&#x2f;FAIL&#x29;&#xd;&#xa;               -- ,NULL AS PROJ_ID -- &#x9879;&#x76ee;&#xd;&#xa;               -- ,T.ATTRIBUTE2 AS PROJ_NAME -- &#x9879;&#x76ee;&#x540d;&#x79f0;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.EARLY_PICKUP_DATE,&#xd;&#xa;                                            &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                             &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; AS EARLY_PICKUP_DATE -- &#x8ba1;&#x5212;&#x65e5;&#xd;&#xa;              ,T.USER_DEFINED4_ICON_GID AS ICON4 -- &#x672a;&#x4f7f;&#x7528;&#xd;&#xa;              ,T.USER_DEFINED5_ICON_GID AS ICON5 -- &#x672a;&#x4f7f;&#x7528;&#xd;&#xa;              ,T.PERSPECTIVE AS PERSPECTIVE -- B&#x3a;&#x8fd0;&#x8f93;&#x3b;S&#x3a;&#x7ed3;&#x7b97;&#xd;&#xa;              ,T.SERVPROV_GID AS SERVPROV_GID -- &#x865a;&#x62df;&#x627f;&#x8fd0;&#x5546;&#xd;&#xa;              ,T.ATTRIBUTE3 AS ORDER_RELEASE_NAME -- FT&#x677f;&#x53f7; order release name&#xd;&#xa;              ,T.ATTRIBUTE5 AS DRIVER_PHONE -- &#x9a7e;&#x9a76;&#x5458;&#x7535;&#x8bdd;&#xd;&#xa;              ,T.ATTRIBUTE7 AS LIC_NO -- &#x8f66;&#x724c;&#x53f7;&#xd;&#xa;              ,T.ATTRIBUTE8 AS ALLOT_NO -- &#x5206;&#x62e8;&#x5355;&#x53f7;&#xd;&#xa;              ,T.ATTRIBUTE10 AS TICKET_UNIT -- &#x542f;&#x7968;&#x5355;&#x4f4d;&#xd;&#xa;              ,T.ATTRIBUTE14 AS PLATE_NO -- &#x5206;&#x677f;&#x5e8f;&#x53f7;&#xd;&#xa;              ,T.ATTRIBUTE16 AS DRIVER_VOYAGE_RAIL -- &#x9a7e;&#x9a76;&#x5458;&#x59d3;&#x540d;&#x2f;&#x8239;&#x540d;&#x822a;&#x6b21;&#x2f;&#x94c1;&#x8def;&#x5927;&#x7ec4;&#xd;&#xa;              ,T.ATTRIBUTE17 AS REST_REASON -- &#x534f;&#x529b;&#x539f;&#x56e0;&#xd;&#xa;              ,T.ATTRIBUTE18 AS LSP -- &#x5b9e;&#x9645;&#x627f;&#x8fd0;&#x5546;&#xd;&#xa;              ,T.ATTRIBUTE19 AS SSP -- &#x4efd;&#x989d;&#x627f;&#x8fd0;&#x5546;&#xd;&#xa;              ,T.ATTRIBUTE20 AS ORDER_COMMENT -- &#x8ba2;&#x5355;&#x5907;&#x6ce8;&#xd;&#xa;              ,T.ATTRIBUTE_NUMBER4 AS ON_PASSAGE_DAYS -- &#x5728;&#x9014;&#x8003;&#x6838;&#x5929;&#x6570;&#xd;&#xa;              ,T.ATTRIBUTE_NUMBER10 AS IS_STORAGE -- &#x5728;&#x9014;&#x542f;&#x7968;&#x8f66;&#x8f86;&#x662f;&#x5426;&#x5df2;&#x5165;&#x5e93;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE1, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS FACTORY_DAY -- &#x51fa;&#x573a;&#x65e5;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE2, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS ARRANGE_DAY -- &#x5b89;&#x6392;&#x65e5;&#x28;&#x6d3e;&#x8f66;&#x786e;&#x8ba4;&#x65e5;&#x29;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE3, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS OUT_STORE_DAY -- &#x51fa;&#x5e93;&#x65e5;&#x2f;&#x4e2d;&#x8f6c;&#x51fa;&#x5e93;&#x65e5;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE4, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS ALLOT_PLN_DAY -- &#x8c03;&#x5ea6;&#x5206;&#x914d;&#x8ba1;&#x5212;&#x65e5;&#x671f;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE5, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS DLVR_DAY -- &#x4e2d;&#x8f6c;&#x5165;&#x5e93;&#x65e5;&#x2f;&#x4ea4;&#x8f66;&#x65e5;&#x2f;&#x5230;&#x8fbe;&#x65e5;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE6, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS ARRIVAL_DAY -- &#x5230;&#x6e2f;&#x65e5;&#x671f;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE7, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS SHIPMENT_DAY -- &#x88c5;&#x8239;&#x65e5;&#x671f;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE8, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS UNLOAD_DAY -- &#x5378;&#x8239;&#x65e5;&#x671f;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE9, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS LOAD_DAY -- &#x88c5;&#x8f66;&#x65e5;&#x671f;&#xd;&#xa;              ,FROM_UNIXTIME&#x28;UNIX_TIMESTAMP&#x28;T.ATTRIBUTE_DATE10, &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29; &#x2b; 28800,&#xd;&#xa;                     &#x27;yyyy-MM-dd HH&#x3a;mm&#x3a;sss&#x27;&#x29;  AS LEAVE_BASE_DAY -- &#x79bb;&#x5f00;&#x57fa;&#x5730;&#x548c;&#x4e2d;&#x8f6c;&#x7ad9;&#x65e5;&#x671f;&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN  T.ATTRIBUTE2 NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  B1.MILEGE &#xd;&#xa;                 WHEN T.SEQ_NO &#x3d; &#x27;1&#x27; AND T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  B3.MILEGE&#xd;&#xa;                 WHEN T.SEQ_NO &#x3d; &#x27;2&#x27; AND T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  B3.MILEGE_TRANSFER&#xd;&#xa;                 ELSE&#xd;&#xa;                  NULL&#xd;&#xa;               END AS MILEGE&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  NVL&#x28;B3.AMOUNT_VALUE, 0&#x29;&#xd;&#xa;                 WHEN  T.ATTRIBUTE2 NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  B1.AMOUNT_VALUE &#xd;&#xa;                 ELSE&#xd;&#xa;                  0&#xd;&#xa;               END AS AMOUNT_VALUE&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  NVL&#x28;B3.AMOUNT_COST, 0&#x29;&#x2b;NVL&#x28;B3.AMOUNT_COST_TRANSFER, 0&#x29;&#xd;&#xa;                 WHEN T.ATTRIBUTE2 NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  B1.AMOUNT_COST &#xd;&#xa;                 ELSE&#xd;&#xa;                  0&#xd;&#xa;               END AS AMOUNT_COST&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.SEQ_NO &#x3d; &#x27;1&#x27; AND T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  NVL&#x28;B3.AMOUNT_VALUE, 0&#x29; - NVL&#x28;B3.AMOUNT_VALUE_TRANSFER, 0&#x29;&#xd;&#xa;                 WHEN T.SEQ_NO &#x3d; &#x27;2&#x27; AND T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  NVL&#x28;B3.AMOUNT_VALUE_TRANSFER, 0&#x29;&#xd;&#xa;                 WHEN  T.ATTRIBUTE2 NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  B1.AMOUNT_VALUE &#xd;&#xa;                 ELSE&#xd;&#xa;                  0&#xd;&#xa;               END AS AMOUNT_SEQ_VALUE&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN T.SEQ_NO &#x3d; &#x27;1&#x27; AND T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  NVL&#x28;B3.AMOUNT_COST, 0&#x29; &#xd;&#xa;                 WHEN T.SEQ_NO &#x3d; &#x27;2&#x27; AND T.ATTRIBUTE2 IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  NVL&#x28;B3.AMOUNT_COST_TRANSFER, 0&#x29;&#xd;&#xa;                 WHEN T.ATTRIBUTE2 NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29; THEN&#xd;&#xa;                  B1.AMOUNT_COST &#xd;&#xa;                 ELSE&#xd;&#xa;                  0&#xd;&#xa;               END AS AMOUNT_SEQ_COST&#xd;&#xa;          FROM ODS_ZCOTM.ORDER_MOVEMENT T&#xd;&#xa;          JOIN TEMP.TEMP_DW_TP_ORDERMOVEMENT_PART P&#xd;&#xa;            ON REGEXP_REPLACE&#x28;SUBSTRING&#x28;T.EARLY_PICKUP_DATE, 1, 7&#x29;,&#x27;-&#x27;,&#x27;&#x27;&#x29;  &#x3d; P.PART_DT &#xd;&#xa;          LEFT JOIN ODS_ZCOTM.ORDER_MOVEMENT_REFNUM R1&#xd;&#xa;            ON T.ORDER_MOVEMENT_GID &#x3d; R1.ORDER_MOVEMENT_GID&#xd;&#xa;           AND R1.OM_REFNUM_QUAL_GID &#x3d; &#x27;CMAL&#x2f;ZC.OM_VDRNO&#x27;&#xd;&#xa;          LEFT JOIN ODS_ZCOTM.XX_T_ZC_BUDGET B1&#xd;&#xa;            ON T.ORDER_MOVEMENT_GID &#x3d; B1.ORDER_RELEASE_GID&#xd;&#xa;           AND B1.BRAND_NAME NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29;&#xd;&#xa;           --AND T.SEQ_NO &#x3d; &#x27;1&#x27;&#xd;&#xa;          --LEFT JOIN ODS_ZCOTM.XX_T_ZC_BUDGET B2&#xd;&#xa;            --ON T.ORDER_MOVEMENT_GID &#x3d; B2.ORDER_RELEASE_GID&#xd;&#xa;           --AND B2.BRAND_NAME NOT IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29;&#xd;&#xa;           --AND T.SEQ_NO &#x3d; &#x27;2&#x27; &#xd;&#xa;          LEFT JOIN ODS_ZCOTM.XX_T_ZC_BUDGET B3&#xd;&#xa;            ON T.ORDER_RELEASE_GID &#x3d; B3.ORDER_RELEASE_GID&#xd;&#xa;           AND B3.BRAND_NAME IN &#x28;&#x27;&#x957f;&#x5b89;&#x798f;&#x7279;&#x27;&#x29;&#xd;&#xa;          LEFT JOIN DIM.DIM_ORG O&#xd;&#xa;            ON T.SOURCE_LOCATION_GID &#x3d; O.ORG_ID&#xd;&#xa;          LEFT JOIN DIM.DIM_ORG DO&#xd;&#xa;            ON T.DEST_LOCATION_GID &#x3d; DO.ORG_ID&#xd;&#xa;          LEFT JOIN DIM.DIM_DEALER D&#xd;&#xa;            ON T.DEST_LOCATION_GID &#x3d; D.DLR_ID&#xd;&#xa;         WHERE T.DOMAIN_NAME &#x3d; &#x27;CMAL&#x2f;ZC&#x27;  &#x29; T&#xd;&#xa;  LEFT JOIN DIM.DIM_PROJ P&#xd;&#xa;    ON T.BASE_ID &#x3d; P.BASE_ID&#xd;&#xa;   AND T.BRAND_ID &#x3d; P.BRAND_ID  &#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>480</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>CREATE_TEMP_TAB</name>
+      <description/>
+      <type>SQL</type>
+      <sql>&#xd;&#xa;set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;CREATE_TEMP_TAB&#x3b;&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.auto.convert.join&#x3d;false&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--Udf&#xd;&#xa;CREATE TABLE IF NOT EXISTS TEMP.TEMP_DW_TP_ORDERMOVEMENT&#x28;&#xd;&#xa;PERIOD_WID                    BIGINT                             COMMENT  &#x27;&#x65e5;&#x671f;&#x7ef4;ID&#x28;&#x4ea4;&#x4ed8;&#x65e5;&#x2f;&#x8ba1;&#x5212;&#x65e5;&#x29;&#x27;,&#xd;&#xa;ORDER_MOVEMENT_GID            STRING                             COMMENT  &#x27;&#x5206;&#x6bb5;&#x8def;&#x7531;GID&#x27;,&#xd;&#xa;ORDER_RELEASE_GID             STRING                             COMMENT  &#x27;OTM&#x5355;&#x53f7;&#x27;,&#xd;&#xa;BUDGET_SHIPMENT_GID           STRING                             COMMENT  &#x27;&#x8fd0;&#x8f93;&#xff08;&#x8d22;&#x52a1;&#xff09;id&#x27;,&#xd;&#xa;SEQ_NO                        STRING                             COMMENT  &#x27;&#x8def;&#x7531;&#x5e8f;&#x5217;&#x53f7;&#x27;,&#xd;&#xa;YD_NO                         STRING                             COMMENT  &#x27;&#x8fd0;&#x5355;&#x53f7;&#x27;,&#xd;&#xa;OC_ID                         STRING                             COMMENT  &#x27;&#x8fd0;&#x8425;&#x4e2d;&#x5fc3;&#x27;,&#xd;&#xa;RGN_ID                        STRING                             COMMENT  &#x27;&#x5927;&#x533a;&#x27;,&#xd;&#xa;BASE_ID                       STRING                             COMMENT  &#x27;&#x57fa;&#x5730;&#x27;,&#xd;&#xa;BASE_NAME                     STRING                             COMMENT  &#x27;&#x57fa;&#x5730;&#x540d;&#x79f0;&#x27;,&#xd;&#xa;PROJ_ID                       STRING                             COMMENT  &#x27;&#x9879;&#x76ee;ID&#x27;,&#xd;&#xa;PROJ_NAME                     STRING                             COMMENT  &#x27;&#x9879;&#x76ee;&#x540d;&#x79f0;&#x27;,&#xd;&#xa;SOURCE_LOCATION_TYPE          STRING                             COMMENT  &#x27;&#x59cb;&#x53d1;&#x5730;&#x7c7b;&#x578b;&#x27;,&#xd;&#xa;SOURCE_LOCATION_ID            STRING                             COMMENT  &#x27;&#x59cb;&#x53d1;&#x5730;ID&#x27;,&#xd;&#xa;DEST_LOCATION_TYPE            STRING                             COMMENT  &#x27;&#x76ee;&#x7684;&#x5730;&#x7c7b;&#x578b;&#x27;,&#xd;&#xa;DEST_LOCATION_ID              STRING                             COMMENT  &#x27;&#x76ee;&#x7684;&#x5730;ID&#x27;,&#xd;&#xa;SOURCE_PRVN_ID                STRING                             COMMENT  &#x27;&#x59cb;&#x53d1;&#x5730;&#x7701;&#x4efd;&#x27;,&#xd;&#xa;SOURCE_CTY_ID                 STRING                             COMMENT  &#x27;&#x59cb;&#x53d1;&#x5730;&#x57ce;&#x5e02;&#x27;,&#xd;&#xa;DEST_PRVN_ID                  STRING                             COMMENT  &#x27;&#x76ee;&#x7684;&#x5730;&#x7701;&#x4efd;&#x27;,&#xd;&#xa;DEST_CTY_ID                   STRING                             COMMENT  &#x27;&#x76ee;&#x7684;&#x5730;&#x57ce;&#x5e02;&#x27;,&#xd;&#xa;DLR_ID                        STRING                             COMMENT  &#x27;&#x4e3b;&#x673a;&#x5382;&#x7ecf;&#x9500;&#x5e97;ID&#x27;,&#xd;&#xa;SUPPLIER_ID                   STRING                             COMMENT  &#x27;&#x627f;&#x8fd0;&#x5546;&#x27;,&#xd;&#xa;VIN                           STRING                             COMMENT  &#x27;VIN&#x7801;&#x27;,&#xd;&#xa;VIN_SIMPLE                    STRING                             COMMENT  &#x27;VIN&#x7b80;&#x7801;&#x27;,&#xd;&#xa;BRAND_ID                      STRING                             COMMENT  &#x27;&#x54c1;&#x724c;ID&#x27;,&#xd;&#xa;PRODUCT_NAME                  STRING                             COMMENT  &#x27;&#x4e3b;&#x673a;&#x5382;&#x8f66;&#x578b;&#x4ee3;&#x7801; - &#x989c;&#x8272; - &#x5206;&#x7c7b;&#x27;,&#xd;&#xa;MODEL_ID                      STRING                             COMMENT  &#x27;&#x8f66;&#x578b;ID&#x27;,&#xd;&#xa;MDLGRP_ID                     STRING                             COMMENT  &#x27;&#x8f66;&#x578b;&#x7ec4;&#x27;,&#xd;&#xa;ALL_TRANSPORTMODE             STRING                             COMMENT  &#x27;&#x8054;&#x8fd0;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x27;,&#xd;&#xa;SEGMETN_TRANSPORTMODE         STRING                             COMMENT  &#x27;&#x8fd0;&#x8f93;&#x6bb5;&#x8fd0;&#x8f93;&#x65b9;&#x5f0f;&#x27;,&#xd;&#xa;TRANSPORTSTATUS               STRING                             COMMENT  &#x27;&#x8fd0;&#x8f93;&#x72b6;&#x6001;&#x27;,&#xd;&#xa;ORDER_STATUS                  STRING                             COMMENT  &#x27;&#x8ba2;&#x5355;&#x72b6;&#x6001;&#x27;,&#xd;&#xa;ALLOT_STAUS                   STRING                             COMMENT  &#x27;&#x5206;&#x914d;&#x72b6;&#x6001;&#x28;NEW&#x2f;PROCESS&#x2f;SUCCESS&#x2f;FAIL&#x29;&#x27;,&#xd;&#xa;EARLY_PICKUP_DATE             STRING                             COMMENT  &#x27;&#x8ba1;&#x5212;&#x65e5;&#x27;,&#xd;&#xa;ICON4                         STRING                             COMMENT  &#x27;&#x672a;&#x4f7f;&#x7528;&#x27;,&#xd;&#xa;ICON5                         STRING                             COMMENT  &#x27;&#x672a;&#x4f7f;&#x7528;&#x27;,&#xd;&#xa;PERSPECTIVE                   STRING                             COMMENT  &#x27;&#x6307;&#x793a;&#x8fd9;&#x662f;&#x4e70;&#x5165;&#x8fd8;&#x662f;&#x5356;&#x51fa;&#x27;,&#xd;&#xa;SERVPROV_GID                  STRING                             COMMENT  &#x27;&#x865a;&#x62df;&#x627f;&#x8fd0;&#x5546;&#x27;,&#xd;&#xa;ORDER_RELEASE_NAME            STRING                             COMMENT  &#x27;FT&#x677f;&#x53f7; order release name&#x27;,&#xd;&#xa;DRIVER_PHONE                  STRING                             COMMENT  &#x27;&#x9a7e;&#x9a76;&#x5458;&#x7535;&#x8bdd;&#x27;,&#xd;&#xa;LIC_NO                        STRING                             COMMENT  &#x27;&#x8f66;&#x724c;&#x53f7;&#x27;,&#xd;&#xa;ALLOT_NO                      STRING                             COMMENT  &#x27;&#x5206;&#x62e8;&#x5355;&#x53f7;&#x27;,&#xd;&#xa;TICKET_UNIT                   STRING                             COMMENT  &#x27;&#x542f;&#x7968;&#x5355;&#x4f4d;&#x27;,&#xd;&#xa;PLATE_NO                      STRING                             COMMENT  &#x27;&#x5206;&#x677f;&#x5e8f;&#x53f7;&#x27;,&#xd;&#xa;DRIVER_VOYAGE_RAIL            STRING                             COMMENT  &#x27;&#x9a7e;&#x9a76;&#x5458;&#x59d3;&#x540d;&#x2f;&#x8239;&#x540d;&#x822a;&#x6b21;&#x2f;&#x94c1;&#x8def;&#x5927;&#x7ec4;&#x27;,&#xd;&#xa;REST_REASON                   STRING                             COMMENT  &#x27;&#x534f;&#x529b;&#x539f;&#x56e0;&#x27;,&#xd;&#xa;LSP                           STRING                             COMMENT  &#x27;&#x5b9e;&#x9645;&#x627f;&#x8fd0;&#x5546;&#x27;,&#xd;&#xa;SSP                           STRING                             COMMENT  &#x27;&#x4efd;&#x989d;&#x627f;&#x8fd0;&#x5546;&#x27;,&#xd;&#xa;ORDER_COMMENT                 STRING                             COMMENT  &#x27;&#x8ba2;&#x5355;&#x5907;&#x6ce8;&#x27;,&#xd;&#xa;ON_PASSAGE_DAYS               decimal&#x28;32,8&#x29;                      COMMENT  &#x27;&#x5728;&#x9014;&#x8003;&#x6838;&#x5929;&#x6570;&#x27;,&#xd;&#xa;IS_STORAGE                    STRING                             COMMENT  &#x27;&#x5728;&#x9014;&#x542f;&#x7968;&#x8f66;&#x8f86;&#x662f;&#x5426;&#x5df2;&#x5165;&#x5e93;&#x27;,&#xd;&#xa;FACTORY_DAY                   STRING                             COMMENT  &#x27;&#x51fa;&#x573a;&#x65e5;&#x27;,&#xd;&#xa;ARRANGE_DAY                   STRING                             COMMENT  &#x27;&#x5b89;&#x6392;&#x65e5;&#x28;&#x6d3e;&#x8f66;&#x786e;&#x8ba4;&#x65e5;&#x29;&#x27;,&#xd;&#xa;OUT_STORE_DAY                 STRING                             COMMENT  &#x27;&#x51fa;&#x5e93;&#x65e5;&#x2f;&#x4e2d;&#x8f6c;&#x51fa;&#x5e93;&#x65e5;&#x27;,&#xd;&#xa;ALLOT_PLN_DAY                 STRING                             COMMENT  &#x27;&#x8c03;&#x5ea6;&#x5206;&#x914d;&#x8ba1;&#x5212;&#x65e5;&#x671f;&#x27;,&#xd;&#xa;DLVR_DAY                      STRING                             COMMENT  &#x27;&#x4e2d;&#x8f6c;&#x5165;&#x5e93;&#x65e5;&#x2f;&#x4ea4;&#x8f66;&#x65e5;&#x2f;&#x5230;&#x8fbe;&#x65e5;&#x27;,&#xd;&#xa;ARRIVAL_DAY                   STRING                             COMMENT  &#x27;&#x5230;&#x6e2f;&#x65e5;&#x671f;&#x27;,&#xd;&#xa;SHIPMENT_DAY                  STRING                             COMMENT  &#x27;&#x88c5;&#x8239;&#x65e5;&#x671f;&#x27;,&#xd;&#xa;UNLOAD_DAY                    STRING                             COMMENT  &#x27;&#x5378;&#x8239;&#x65e5;&#x671f;&#x27;,&#xd;&#xa;LOAD_DAY                      STRING                             COMMENT  &#x27;&#x88c5;&#x8f66;&#x65e5;&#x671f;&#x27;,&#xd;&#xa;LEAVE_BASE_DAY                STRING                             COMMENT  &#x27;&#x79bb;&#x5f00;&#x57fa;&#x5730;&#x548c;&#x4e2d;&#x8f6c;&#x7ad9;&#x65e5;&#x671f;&#x27;,&#xd;&#xa;MILEGE                        decimal&#x28;32,8&#x29;                      COMMENT  &#x27;&#x91cc;&#x7a0b;&#x28;&#x9884;&#x7b97;&#x29;&#x27;,&#xd;&#xa;AMOUNT_VALUE                  decimal&#x28;32,8&#x29;                      COMMENT  &#x27;&#x603b;&#x6536;&#x5165;&#x28;&#x9884;&#x7b97;&#x29;&#x27;,&#xd;&#xa;AMOUNT_COST                   decimal&#x28;32,8&#x29;                      COMMENT  &#x27;&#x603b;&#x6210;&#x672c;&#x28;&#x9884;&#x7b97;&#x29;&#x27;,&#xd;&#xa;AMOUNT_SEQ_VALUE              decimal&#x28;32,8&#x29;                      COMMENT  &#x27;&#x6bb5;&#x6536;&#x5165;&#x28;&#x9884;&#x7b97;&#x29;&#x27;,&#xd;&#xa;AMOUNT_SEQ_COST               decimal&#x28;32,8&#x29;                      COMMENT  &#x27;&#x6bb5;&#x6210;&#x672c;&#x28;&#x9884;&#x7b97;&#x29;&#x27;,&#xd;&#xa;SOURCE_CODE                   STRING                             COMMENT  &#x27;&#x6e90;&#x7cfb;&#x7edf;&#x6807;&#x8bc6;&#x27;,&#xd;&#xa;INTEGRATION_ID                STRING                             COMMENT  &#x27;&#x8bb0;&#x5f55;&#x552f;&#x4e00;&#x6807;&#x8bc6;&#x27;,&#xd;&#xa;AUX1_CHANGED_ON_DT            STRING                             COMMENT  &#x27;&#x539f;&#x7cfb;&#x7edf;&#x8bb0;&#x5f55;&#x521b;&#x5efa;&#x65f6;&#x95f4;&#x27;,&#xd;&#xa;W_INSERT_DT                   STRING                             COMMENT  &#x27;&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x63d2;&#x5165;&#x65f6;&#x95f4;&#x27;,&#xd;&#xa;W_UPDATE_DT                   STRING                             COMMENT  &#x27;&#x6570;&#x636e;&#x4ed3;&#x5e93;&#x4fee;&#x6539;&#x65f6;&#x95f4;&#x27;,&#xd;&#xa;PART_SC                       STRING                             COMMENT  &#x27;&#x6570;&#x636e;&#x6765;&#x6e90;&#x27;,&#xd;&#xa;PART_DT                       STRING                             COMMENT  &#x27;&#x5206;&#x533a;&#x65f6;&#x95f4;&#x27;&#xd;&#xa;&#x29; &#xd;&#xa;COMMENT &#x27;&#x8def;&#x7531;&#x27;&#xd;&#xa;ROW FORMAT DELIMITED FIELDS TERMINATED BY &#x27;&#x5c;036&#x27;&#xd;&#xa;STORED AS PARQUET&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;CREATE TABLE IF NOT EXISTS TEMP.TEMP_DW_TP_ORDERMOVEMENT_PART&#x28;&#xd;&#xa;PART_DT                        STRING                             COMMENT  &#x27;&#x5206;&#x533a;&#x65f6;&#x95f4;&#x27;&#xd;&#xa;&#x29; &#xd;&#xa;COMMENT &#x27;&#x5904;&#x7406;DW_&#x672c;&#x6b21;&#x7ffb;&#x724c;&#x5e94;&#x5904;&#x7406;&#x7684;&#x5206;&#x533a;&#x27;&#xd;&#xa;ROW FORMAT DELIMITED FIELDS TERMINATED BY &#x27;&#x5c;036&#x27;&#xd;&#xa;STORED AS PARQUET&#x3b;&#xd;&#xa;&#xd;&#xa;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>352</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>TO_TEMP_PART</name>
+      <description/>
+      <type>SQL</type>
+      <sql>set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;TO_TEMP_PART&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.auto.convert.join&#x3d;false&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--&#x5f97;&#x5230;&#x672c;&#x6b21;&#x7ffb;&#x724c;&#x65f6;&#x95f4;&#x5e94;&#x5904;&#x7406;&#x7684;&#x5206;&#x533a;&#xd;&#xa;&#xd;&#xa;INSERT OVERWRITE TABLE TEMP.TEMP_DW_TP_ORDERMOVEMENT_PART&#xd;&#xa;&#xd;&#xa;SELECT  A.PART_DT&#xd;&#xa;  FROM &#x28;SELECT REGEXP_REPLACE&#x28;SUBSTR&#x28;T.EARLY_PICKUP_DATE, 1, 7&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; AS PART_DT&#xd;&#xa;          FROM ODS_ZCOTM.ORDER_MOVEMENT T&#xd;&#xa;         WHERE 1 &#x3d; 1&#xd;&#xa;           AND REGEXP_REPLACE&#x28;SUBSTR&#x28;T.EARLY_PICKUP_DATE, 1, 10&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; &#x3e;&#x3d;&#xd;&#xa;               SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;, 1, 8&#x29;&#xd;&#xa;           AND REGEXP_REPLACE&#x28;SUBSTR&#x28;T.EARLY_PICKUP_DATE, 1, 10&#x29;, &#x27;-&#x27;, &#x27;&#x27;&#x29; &#x3c;&#x3d;&#xd;&#xa;               SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;END_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;, 1, 8&#x29;&#xd;&#xa;        --&#x521b;&#x5efa;&#x6708;&#x4efd;&#x4f5c;&#x4e3a;&#x5206;&#x533a;&#xd;&#xa;     &#x29; AS A&#xd;&#xa;WHERE A.PART_DT&#x3e;&#x3d; &#x27;201708&#x27;&#xd;&#xa; GROUP BY A.PART_DT  &#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>480</xloc>
+      <yloc>112</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>START</from>
+      <to>GenPara</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>UPDATE_PARA</from>
+      <to>SUCCESS</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_DW</from>
+      <to>UPDATE_PARA</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_TEMP</from>
+      <to>TO_DW</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>GenPara</from>
+      <to>CREATE_TEMP_TAB</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>CREATE_TEMP_TAB</from>
+      <to>TO_TEMP_PART</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_TEMP_PART</from>
+      <to>TO_TEMP</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+    <notepad>
+      <note>&#x3e;&#x529f;&#x80fd;&#x8bf4;&#x660e;&#xff1a;&#x8fd0;&#x8f93;&#x8def;&#x7531;&#xd;&#xa;&#x3e;&#x66f4;&#x65b0;&#x65b9;&#x5f0f;&#xff1a;APPEND&#xd;&#xa;&#x3e;&#x521b; &#x5efa; &#x4eba; &#xff1a;&#x590f;&#x6ce2; - &#x7f8e;&#x4e91;&#xd;&#xa;&#x3e;&#x521b;&#x5efa;&#x65e5;&#x671f;&#xff1a;2018&#x2f;6&#x2f;12&#xd;&#xa;&#x3e;&#x8fd0;&#x884c;&#x5468;&#x671f;&#xff1a;&#x8be5;&#x4f5c;&#x4e1a;&#x8fd0;&#x884c;&#x7684;&#x5468;&#x671f;,&#x5982;&#x65e5;&#x3001;&#x6708;&#x7b49;&#xd;&#xa;&#x3e;&#x4f8b;&#x3000;&#x3000;&#x7a0b;&#xff1a;&#x8c03;&#x7528;&#x8be5;&#x4f5c;&#x4e1a;&#x7684;&#x547d;&#x4ee4;&#x884c;&#x8bed;&#x53e5;,&#x542b;&#x8f93;&#x5165;&#x53c2;&#x6570;&#xd;&#xa;&#x3e;&#x5907;&#x3000;&#x3000;&#x6ce8;&#xff1a;&#xd;&#xa;&#x3e;&#x7ef4;&#x62a4;&#x8bb0;&#x5f55;&#xff1a;&#xd;&#xa;&#x3e;&#x7ef4;&#x62a4;&#x65e5;&#x671f;&#xff1a;&#xd;&#xa;&#x3e;&#x7ef4; &#x62a4; &#x4eba; &#xff1a;&#xd;&#xa;&#x3e;&#x7ef4;&#x62a4;&#x5185;&#x5bb9;&#xff1a;&#xd;&#xa;</note>
+      <xloc>0</xloc>
+      <yloc>352</yloc>
+      <width>405</width>
+      <heigth>287</heigth>
+      <fontname>Microsoft YaHei UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+
+</job>

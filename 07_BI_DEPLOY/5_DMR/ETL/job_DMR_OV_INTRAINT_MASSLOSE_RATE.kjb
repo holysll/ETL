@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_DMR_OV_INTRAINT_MASSLOSE_RATE</name>
+    <description>&#x5730;&#x533a;&#x7ef4;&#x5ea6;</description>
+    <extended_description/>
+    <job_version/>
+    <job_status>0</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#x2f;05&#x2f;25 10&#x3a;09&#x3a;15.096</modified_date>
+    <parameters>
+    </parameters>
+  <connection>
+    <name>Hive</name>
+    <server>&#x24;&#x7b;CMALDW_HIVE_DB_HOST&#x7d;</server>
+    <type>HIVE2</type>
+    <access>Native</access>
+    <database>&#x24;&#x7b;CMALDW_HIVE_DB_NAME&#x7d;</database>
+    <port>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</port>
+    <username>&#x24;&#x7b;CMALDW_HIVE_DB_USER&#x7d;</username>
+    <password>&#x24;&#x7b;CMALDW_HIVE_DB_PASSWORD&#x7d;</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>&#x24;&#x7b;CMALDW_HIVE_DB_PORT&#x7d;</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>16</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>GenPara</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_generate_parameteer.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>96</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>SUCCESS</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>368</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>UPDATE_PARA</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>filename</specification_method>
+      <trans_object_id/>
+      <filename>&#x24;&#x7b;CMALDW_ETL_PUBLIC&#x7d;&#x5c;public_update_parameter.ktr</filename>
+      <transname/>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>272</xloc>
+      <yloc>224</yloc>
+      </entry>
+    <entry>
+      <name>TO_DMR</name>
+      <description/>
+      <type>SQL</type>
+      <sql>--Source Table in Hive&#x3a; DIM.DIM_ORG &#xd;&#xa;--Target Table in Hive&#x3a; DMR.DMR_OV_RGN_PROVINCE_RELA&#xd;&#xa;--Reference&#x3a; &#xd;&#xa;&#xd;&#xa;--hive conf settings&#xd;&#xa;--set hive.execution.engine&#x3d;spark&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--Settings&#xd;&#xa;set mapred.job.name&#x3d;&#x24;&#x7b;Internal.Job.Name&#x7d;&#x3a;TO_DMR&#xd;&#xa;set mapreduce.job.queuename&#x3d;&#x24;&#x7b;CMALDW_DEFAULT_QUEUE&#x7d;&#x3b;&#xd;&#xa;set hive.map.aggr&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel&#x3d;true&#x3b;&#xd;&#xa;set hive.exec.parallel.thread.number &#x3d;16&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition.mode&#x3d;nonstrict&#x3b;&#xd;&#xa;set hive.exec.dynamic.partition&#x3d;true&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;--data insertion&#xd;&#xa;INSERT OVERWRITE TABLE DMR.DMR_OV_INTRAINT_MASSLOSE_RATE PARTITION&#x28;PART_SC,PART_DT&#x29;&#xd;&#xa;SELECT substr&#x28;regexp_replace&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29; AS PERIOD_WID&#xd;&#xa;    ,A.rgn_id &#xd;&#xa;    ,A.rgn_name&#xd;&#xa;    ,C.MASSLOSE_QTY&#xd;&#xa;    ,C.INTRAINT_QTY&#xd;&#xa;    ,C.MASSLOSE_RATE&#xd;&#xa;    ,0 AS TAR_RATE&#xd;&#xa;    ,&#x27;DW&#x27; AS PART_SC&#xd;&#xa;    ,substr&#x28;regexp_replace&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29; AS PART_DT&#xd;&#xa;FROM &#x28;&#xd;&#xa;    SELECT rgn_id,rgn_name&#xd;&#xa;    FROM DIM.dim_org&#xd;&#xa;    where ORG_TYPE &#x3d; &#x27;R&#x27;&#xd;&#xa;        AND rgn_id NOT IN &#x28;&#x27;CMAL&#x2f;ZC&#x2f;-1&#x27;,&#x27;BOYU&#x27;,&#x27;CENTER&#x27;&#x29;&#xd;&#xa;    group by rgn_id,rgn_name&#xd;&#xa;    &#x29; A&#xd;&#xa;left join&#x28;&#xd;&#xa;SELECT B.PERIOD_WID&#xd;&#xa;      ,B.RGN_ID&#xd;&#xa;      ,B.RGN_NAME&#xd;&#xa;      ,NVL&#x28;B.MASSLOSE_QTY,0&#x29; AS MASSLOSE_QTY&#xd;&#xa;      ,B.INTRAINT_QTY&#xd;&#xa;      ,B.MASSLOSE_RATE&#xd;&#xa;      ,0 AS TAR_RATE&#xd;&#xa;      ,&#x27;DW&#x27; AS PART_SC&#xd;&#xa;      ,B.PERIOD_WID AS PART_DT&#xd;&#xa;  FROM &#x28;SELECT COALESCE&#x28;A.PERIOD_WID, P.PERIOD_WID&#x29; AS PERIOD_WID&#xd;&#xa;              ,COALESCE&#x28;A.RGN_ID, P.RGN_ID&#x29; AS RGN_ID&#xd;&#xa;              ,COALESCE&#x28;A.RGN_NAME, P.RGN_NAME&#x29; AS RGN_NAME&#xd;&#xa;              ,A.MASSLOSE_QTY AS MASSLOSE_QTY&#xd;&#xa;              ,P.PLAN_QTY_MON AS INTRAINT_QTY&#xd;&#xa;              ,CASE&#xd;&#xa;                 WHEN NVL&#x28;P.PLAN_QTY_MON, 0&#x29; &#x3d; 0 THEN&#xd;&#xa;                  0&#xd;&#xa;                 ELSE&#xd;&#xa;                  A.MASSLOSE_QTY &#x2f; P.PLAN_QTY_MON&#xd;&#xa;               END AS MASSLOSE_RATE&#xd;&#xa;          FROM &#x28;SELECT SUBSTR&#x28;REGEXP_REPLACE&#x28;T.RECEIVING_DATE,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29; AS PERIOD_WID --&#x671f;&#x95f4;&#xd;&#xa;                      ,T.RGN_ID --&#x5927;&#x533a;ID&#xd;&#xa;                      ,T.RGN_NAME --&#x5927;&#x533a;&#x540d;&#x79f0;&#xd;&#xa;                      ,COUNT&#x28;1&#x29; AS MASSLOSE_QTY --&#x5728;&#x9014;&#x8d28;&#x635f;&#x6570;&#xd;&#xa;                  FROM DW.DW_TP_INROAD_LOSS T&#xd;&#xa;                 WHERE SUBSTR&#x28;REGEXP_REPLACE&#x28;T.RECEIVING_DATE,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29; &#x3d;&#xd;&#xa;                       SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;, 1, 6&#x29;&#xd;&#xa;                 GROUP BY SUBSTR&#x28;REGEXP_REPLACE&#x28;T.RECEIVING_DATE,&#x27;-&#x27;,&#x27;&#x27;&#x29;,1,6&#x29;&#xd;&#xa;                         ,T.RGN_ID&#xd;&#xa;                         ,T.RGN_NAME&#x29; AS A&#xd;&#xa;          FULL JOIN &#x28;SELECT SUBSTR&#x28;REGEXP_REPLACE&#x28;PLN.MONTH_ID, &#x27;-&#x27;, &#x27;&#x27;&#x29;,&#xd;&#xa;                                  1,&#xd;&#xa;                                  6&#x29; AS PERIOD_WID&#xd;&#xa;                          ,RGN.RGN_ID&#xd;&#xa;                          ,RGN.RGN_NAME&#xd;&#xa;                          ,SUM&#x28;PLN.REV_PLAN&#x29; AS PLAN_QTY_MON&#xd;&#xa;                      FROM ODS_BLPT.T_HAND_REV_TICKET_PLAN PLN&#xd;&#xa;                      LEFT JOIN DIM.DIM_ORG RGN&#xd;&#xa;                        ON RGN.ORG_TYPE &#x3d; &#x27;R&#x27;&#xd;&#xa;                       AND PLN.RGN_NAME &#x3d; RGN.RGN_NAME&#xd;&#xa;                     WHERE SUBSTR&#x28;REGEXP_REPLACE&#x28;PLN.MONTH_ID, &#x27;-&#x27;, &#x27;&#x27;&#x29;,&#xd;&#xa;                                  1,&#xd;&#xa;                                  6&#x29; &#x3d;&#xd;&#xa;                           SUBSTR&#x28;REGEXP_REPLACE&#x28;&#x27;&#x24;&#x7b;START_DATE&#x7d;&#x27;, &#x27;-&#x27;, &#x27;&#x27;&#x29;,&#xd;&#xa;                                  1,&#xd;&#xa;                                  6&#x29; &#xd;&#xa;                     GROUP BY SUBSTR&#x28;REGEXP_REPLACE&#x28;PLN.MONTH_ID, &#x27;-&#x27;, &#x27;&#x27;&#x29;,&#xd;&#xa;                                     1,&#xd;&#xa;                                     6&#x29;&#xd;&#xa;                             ,RGN.RGN_ID&#xd;&#xa;                             ,RGN.RGN_NAME&#x29; AS P&#xd;&#xa;            ON A.PERIOD_WID &#x3d; P.PERIOD_WID&#xd;&#xa;           AND A.RGN_ID &#x3d; P.RGN_ID&#xd;&#xa;           AND A.RGN_NAME &#x3d; P.RGN_NAME&#x29; AS B&#xd;&#xa;    &#x29; C&#xd;&#xa;ON A.rgn_id &#x3d; C.RGN_ID&#x3b;</sql>
+      <useVariableSubstitution>T</useVariableSubstitution>
+      <sqlfromfile>F</sqlfromfile>
+      <sqlfilename/>
+      <sendOneStatement>F</sendOneStatement>
+      <connection>Hive</connection>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>176</xloc>
+      <yloc>224</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>START</from>
+      <to>GenPara</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>UPDATE_PARA</from>
+      <to>SUCCESS</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>GenPara</from>
+      <to>TO_DMR</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>TO_DMR</from>
+      <to>UPDATE_PARA</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+    <notepad>
+      <note>&#x529f;&#x80fd;&#x8bf4;&#x660e;&#xff1a;DMR_OV_INTRAINT_MASSLOSE_RATE&#xd;&#xa;          &#x5927;&#x5c4f;6-&#x5728;&#x9014;&#x8d28;&#x635f;&#x7387;&#xd;&#xa;&#x66f4;&#x65b0;&#x65b9;&#x5f0f;&#xff1a;REPLACE&#xd;&#xa;&#x521b; &#x5efa; &#x4eba; &#xff1a;&#x5f20;&#x6b22; - &#x7f8e;&#x4e91;&#xd;&#xa;&#x521b;&#x5efa;&#x65e5;&#x671f;&#xff1a;2018&#x2f;8&#x2f;3&#xd;&#xa;&#x8fd0;&#x884c;&#x5468;&#x671f;&#xff1a;&#x6708;&#xd;&#xa;&#x4f8b;&#x3000;&#x3000;&#x7a0b;&#xff1a;&#x8c03;&#x7528;&#x8be5;&#x4f5c;&#x4e1a;&#x7684;&#x547d;&#x4ee4;&#x884c;&#x8bed;&#x53e5;,&#x542b;&#x8f93;&#x5165;&#x53c2;&#x6570;&#xd;&#xa;&#x5907;&#x3000;&#x3000;&#x6ce8;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x8bb0;&#x5f55;&#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x65e5;&#x671f;&#xff1a;&#xd;&#xa;&#x7ef4; &#x62a4; &#x4eba; &#xff1a;&#xd;&#xa;&#x7ef4;&#x62a4;&#x5185;&#x5bb9;&#xff1a;&#xd;&#xa;</note>
+      <xloc>16</xloc>
+      <yloc>16</yloc>
+      <width>289</width>
+      <heigth>219</heigth>
+      <fontname>Microsoft YaHei UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+
+</job>

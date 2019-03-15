@@ -1,0 +1,40 @@
+DROP TABLE IF EXISTS DMR.DMR_FIN_TP_BIZ;
+CREATE TABLE IF NOT EXISTS DMR.DMR_FIN_TP_BIZ
+(PERIOD_WID               STRING         COMMENT  '期间',
+ RGN_ID                   STRING         COMMENT  '大区ID',
+ RGN_NAME                 STRING         COMMENT  '大区名称',
+ BASE_ID                  STRING         COMMENT  '基地ID',
+ BASE_NAME                STRING         COMMENT  '基地名称',
+ BRAND_ID                 STRING         COMMENT  '品牌ID',
+ BRAND_NAME               STRING         COMMENT  '品牌名称',
+ PROJ_ID                  STRING         COMMENT  '项目ID',
+ PROJ_NAME                STRING         COMMENT  '项目名称',
+ TRANSPORTMODE_ID         STRING         COMMENT  '运输方式ID',
+ TRANSPORTMODE_NAME       STRING         COMMENT  '运输方式名称',
+ PROFIT_AMT_M             DECIMAL(32,8)  COMMENT  '本期运输利润',
+ PROFIT_AMT_LM            DECIMAL(32,8)  COMMENT  '上期运输利润',
+ PROFIT_AMT_LYM           DECIMAL(32,8)  COMMENT  '同期运输利润',
+ PROFIT_AMT_Y             DECIMAL(32,8)  COMMENT  '本年累计运输利润',
+ PROFIT_AMT_LY            DECIMAL(32,8)  COMMENT  '上年累计运输利润',
+ INCOME_AMT_M             DECIMAL(32,8)  COMMENT  '本期运输收入',
+ INCOME_AMT_LM            DECIMAL(32,8)  COMMENT  '上期运输收入',
+ INCOME_AMT_LYM           DECIMAL(32,8)  COMMENT  '同期运输收入',
+ INCOME_AMT_Y             DECIMAL(32,8)  COMMENT  '本年累计运输收入',
+ INCOME_AMT_LY            DECIMAL(32,8)  COMMENT  '上年累计运输收入',
+ COST_AMT_M               DECIMAL(32,8)  COMMENT  '本期运输成本',
+ COST_AMT_LM              DECIMAL(32,8)  COMMENT  '上期运输成本',
+ COST_AMT_LYM             DECIMAL(32,8)  COMMENT  '同期运输成本',
+ COST_AMT_Y               DECIMAL(32,8)  COMMENT  '本年累计运输成本',
+ COST_AMT_LY              DECIMAL(32,8)  COMMENT  '上年累计运输成本',
+ SHIPPING_NUM_M           DECIMAL(32,8)  COMMENT  '本期运输业务量',
+ SHIPPING_NUM_LM          DECIMAL(32,8)  COMMENT  '上期运输业务量',
+ SHIPPING_NUM_LYM         DECIMAL(32,8)  COMMENT  '同期运输业务量',
+ SHIPPING_NUM_Y           DECIMAL(32,8)  COMMENT  '本年累计运输业务量',
+ SHIPPING_NUM_LY          DECIMAL(32,8)  COMMENT  '上年累计运输业务量',
+ MILEGE_M                 DECIMAL(32,8)  COMMENT  '本期运输里程',
+ MILEGE_LM                DECIMAL(32,8)  COMMENT  '上期运输里程',
+ INSERT_TIME              STRING         COMMENT  '插入时间'
+)COMMENT '概览-财务分析-运输业务'
+PARTITIONED BY(PART_SC STRING COMMENT '数据来源',PART_DT STRING COMMENT '分区时间')
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\036'
+STORED AS PARQUET;

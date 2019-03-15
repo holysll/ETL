@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job>
+  <name>job_PUB_LOOP_TEST</name>
+    <description>&#x6d4b;&#x8bd5;LOOP JOB&#x811a;&#x672c;&#x6267;&#x884c;&#x60c5;&#x51b5;</description>
+    <extended_description/>
+    <job_version>0.1</job_version>
+    <job_status>1</job_status>
+  <directory>&#x2f;</directory>
+  <created_user>-</created_user>
+  <created_date>2018&#x2f;01&#x2f;11 14&#x3a;46&#x3a;15.277</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2018&#x2f;01&#x2f;11 14&#x3a;46&#x3a;15.277</modified_date>
+    <parameters>
+        <parameter>
+            <name>JOB_NAME</name>
+            <default_value/>
+            <description>&#x4f5c;&#x4e1a;&#x540d;</description>
+        </parameter>
+        <parameter>
+            <name>JOB_PATH</name>
+            <default_value/>
+            <description>&#x4f5c;&#x4e1a;&#x8def;&#x5f84;</description>
+        </parameter>
+    </parameters>
+    <slaveservers>
+    </slaveservers>
+<job-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_JOB</id><enabled>Y</enabled><name>ID_JOB</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>JOBNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>START_JOB_ENTRY</id><enabled>N</enabled><name>START_JOB_ENTRY</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></job-log-table>
+<jobentry-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>JOBNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>JOBENTRYNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>RESULT</id><enabled>Y</enabled><name>RESULT</name></field><field><id>NR_RESULT_ROWS</id><enabled>Y</enabled><name>NR_RESULT_ROWS</name></field><field><id>NR_RESULT_FILES</id><enabled>Y</enabled><name>NR_RESULT_FILES</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field><field><id>COPY_NR</id><enabled>N</enabled><name>COPY_NR</name></field></jobentry-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+   <pass_batchid>N</pass_batchid>
+   <shared_objects_file/>
+  <entries>
+    <entry>
+      <name>START</name>
+      <description/>
+      <type>SPECIAL</type>
+      <start>Y</start>
+      <dummy>N</dummy>
+      <repeat>N</repeat>
+      <schedulerType>0</schedulerType>
+      <intervalSeconds>0</intervalSeconds>
+      <intervalMinutes>60</intervalMinutes>
+      <hour>12</hour>
+      <minutes>0</minutes>
+      <weekDay>1</weekDay>
+      <DayOfMonth>1</DayOfMonth>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>224</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>SUCCESS</name>
+      <description/>
+      <type>SUCCESS</type>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>576</xloc>
+      <yloc>176</yloc>
+      </entry>
+    <entry>
+      <name>Shell</name>
+      <description/>
+      <type>SHELL</type>
+      <filename/>
+      <work_directory>&#x24;&#x7b;CADW_WORKING_DIR&#x7d;</work_directory>
+      <arg_from_previous>N</arg_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <set_append_logfile>N</set_append_logfile>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <insertScript>Y</insertScript>
+      <script>&#x23;&#x21;&#x2f;bin&#x2f;bash&#xd;&#xa;&#xd;&#xa;echo &#x24;&#x7b;CADW_IOV_JDBC&#x7d;&#xd;&#xa;sqoop list-tables --connect &#x24;&#x7b;CADW_IOV_JDBC&#x7d;  --username &#x24;&#x7b;CADW_IOV_DB_USER&#x7d; --password &#x24;&#x7b;CADW_IOV_DB_PASSWORD&#x7d;&#xd;&#xa;sleep 60&#xd;&#xa;&#x23;	i&#x3d;0&#xd;&#xa;&#x23;	echo &#x24;i&#xd;&#xa;&#x23;	&#x23;&#x23; &#x83b7;&#x53d6;&#x65e5;&#x5fd7;&#x76ee;&#x5f55;&#xd;&#xa;&#x23;	etlHome&#x3d;&#x24;&#x7b;CADW_ETL_HOME&#x7d;&#xd;&#xa;&#x23;	logFile&#x3d;&#x24;&#x7b;etlHome&#x2f;&#x5c;&#x2f;cmd_files_from_svn&#x2f;&#x5c;&#x2f;console_files&#x7d;&#x2f;&#x24;&#x7b;JOB_PATH&#x7d;&#x2f;&#x24;&#x7b;JOB_NAME&#x7d;&#x60;date &#x2b;&#x25;Y&#x25;m&#x25;d&#x25;H&#x25;M&#x25;S&#x25;N&#x60;.log.kettle&#xd;&#xa;&#x23;	echo &#x24;&#x7b;JOB_PATH&#x7d;&#xd;&#xa;&#x23;      echo &#x24;&#x7b;JOB_NAME&#x7d;&#xd;&#xa;&#x23;	echo &#x24;logFile&#xd;&#xa;&#x23;      &#x24;&#x7b;CADW_KITCHEN_BIN&#x7d;&#x2f;kitchen.sh -file&#x3d;&#x24;&#x7b;CADW_ETL_HOME&#x7d;&#x2f;&#x24;&#x7b;JOB_PATH&#x7d;&#x2f;&#x24;&#x7b;JOB_NAME&#x7d;.kjb -logfile&#x3d;&#x24;logFile&#xd;&#xa;&#x23;	falseSteps&#x3d;&#x60;cat &#x24;logFile &#x7c; grep -P &#x22;&#x5c;&#x28;result&#x3d;&#x5c;&#x5b;false&#x5c;&#x5d;&#x5c;&#x29;&#x22; &#x7c; wc -l&#x60;&#xd;&#xa;&#x23;	trueSteps&#x3d;&#x60;cat &#x24;logFile &#x7c; grep -P &#x22;&#x5c;&#x28;result&#x3d;&#x5c;&#x5b;true&#x5c;&#x5d;&#x5c;&#x29;&#x22; &#x7c; wc -l&#x60;&#xd;&#xa;&#x23;	finishFlag&#x3d;&#x60;cat &#x24;logFile &#x7c; grep -P &#x22;&#x5c;- Kitchen &#x5c;- Finished&#x5c;&#x21;&#x22; &#x7c; wc -l&#x60;&#xd;&#xa;&#x23;	successFlag&#x3d;&#x60;cat &#x24;logFile &#x7c; grep -P -i &#x22;&#x5c;- Finished job entry &#x5c;&#x5b;SUCCESS&#x5c;&#x5d; &#x5c;&#x28;result&#x3d;&#x5c;&#x5b;true&#x5c;&#x5d;&#x5c;&#x29;&#x22; &#x7c; wc -l&#x60;&#xd;&#xa;&#x23;	if &#x5b; &#x24;trueSteps -gt 0 -a &#x24;falseSteps -eq 0 -a &#x24;finishFlag -ge 1 -o &#x24;successFlag -ge 1 &#x5d;&#x3b; then&#xd;&#xa;&#x23;		&#x28;&#x28;i&#x2b;&#x2b;&#x29;&#x29;&#xd;&#xa;&#x23;	else&#xd;&#xa;&#x23;		echo &#x22;JOB&#x6267;&#x884c;&#x5931;&#x8d25;,trueSteps&#x3a;&#x24;trueSteps,falseSteps&#x3a;&#x24;falseSteps,finishFlag&#x3a;&#x24;finishFlag,sucessFlag&#x3a;&#x24;successFlag&#x22;&#xd;&#xa;&#x23;		exit 1&#xd;&#xa;&#x23;	fi</script>
+      <loglevel>Basic</loglevel>
+      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>384</xloc>
+      <yloc>176</yloc>
+      </entry>
+  </entries>
+  <hops>
+    <hop>
+      <from>START</from>
+      <to>Shell</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>Y</unconditional>
+    </hop>
+    <hop>
+      <from>Shell</from>
+      <to>SUCCESS</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+  </hops>
+  <notepads>
+  </notepads>
+
+</job>
